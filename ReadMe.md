@@ -109,7 +109,7 @@ active ..> patch
 @enduml
 ```
 </div>
-![](usecases.svg)
+![](diagrams/usecases.svg)
 
 ### Data Model
 
