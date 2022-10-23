@@ -1,0 +1,60 @@
+﻿@page "/headlinemaintenance"
+@inject HttpClient Http
+
+<PageTitle>Headlines</PageTitle>
+
+<h1>Headlines</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (headlines == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Headline</th>
+                <th>Background  colour</th>
+                <th>Foreground colour</th>
+                <th>Image</th>
+                <th>Active</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var headline in headlines)
+            {
+                <tr>
+                    <td>@headline.Id</td>
+                    <td>@headline.Banner</td>
+                    <td>@headline.BackgroundColour</td>
+                    <td>@headline.ForegroundColour</td>
+                    <td>@headline.ImageUrl</td>
+                    <td>@headline.Active</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Headline[]? headlines;
+
+    protected override async Task OnInitializedAsync()
+    {
+        headlines = await Http.GetFromJsonAsync<Headline[]>("sample-data/headlines.json");
+    }
+
+    public class Headline
+    {
+        public int Id { get; set; }
+        public string Banner { get; set; }
+        public string BackgroundColour { get; set; }
+        public string ForegroundColour { get; set; }
+        public string? ImageUrl { get; set; }
+        public bool Active { get; set; }
+    }
+}

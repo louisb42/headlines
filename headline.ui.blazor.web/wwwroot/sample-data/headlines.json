@@ -1,0 +1,55 @@
+﻿[
+  {
+    "id": 1,
+    "banner": "Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.",
+    "backgroundColour": "#c0c0c0",
+    "foregroundColour": "#000000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Will_Ferrell_2012.jpg/330px-Will_Ferrell_2012.jpg",
+    "active": true
+  },
+  {
+    "id": 2,
+    "banner": "I’m not insane. My mother had me tested.",
+    "backgroundColour": "#000000",
+    "foregroundColour": "#ffffff",
+    "imageUrl": "https://en.wikipedia.org/wiki/Sheldon_Cooper#/media/File:%D0%94%D0%B2%D1%83%D1%85%D1%81%D0%BB%D0%BE%D0%B9%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B0%D1%84%D0%B0%D1%80%D0%B5%D1%82.jpg",
+    "active": true
+  },
+  {
+    "id": 3,
+    "banner": "Everything you read on the internet is true.",
+    "backgroundColour": "#ffffff",
+    "foregroundColour": "#000000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/330px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
+    "active": true
+  },
+  {
+    "id": 4,
+    "banner": "Insomnia sharpens your math skills because you spend all night calculating how much sleep you’ll get if you’re able to ‘fall asleep right now.",
+    "backgroundColour": "#aa0000",
+    "foregroundColour": "#000000",
+    "active": true
+  },
+  {
+    "id": 5,
+    "banner": "It is the time you have wasted for your rose that makes your rose so important.",
+    "backgroundColour": "#00aa00",
+    "foregroundColour": "#000000",
+    "imageUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flithub.com%2Fwhat-can-we-learn-from-the-life-of-the-little-prince%2F&psig=AOvVaw3LoyER_wfnZPTNi2bFQReZ&ust=1666603130303000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCNij79CC9voCFQAAAAAdAAAAABAD",
+    "active": true
+  },
+  {
+    "id": 6,
+    "banner": "A day without sunshine is like night.",
+    "backgroundColour": "#00aa00",
+    "foregroundColour": "#000000",
+    "active": true
+  },
+  {
+    "id": 6,
+    "banner": "He’s the hero Gotham deserves, but not the one it needs right now. So we’ll hunt him...Because he can take it...Because he’s not our hero. He’s a silent guardian, a watchful protector. A dark knight.",
+    "backgroundColour": "#00aa00",
+    "foregroundColour": "#000000",
+    "active": true
+  }
+]
