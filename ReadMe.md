@@ -108,7 +108,8 @@ active ..> patch
 
 @enduml
 ```
-<div hidden>
+</div>
+![](usecases.svg)
 
 ### Data Model
 
@@ -131,8 +132,7 @@ entity Headline {
 }
 @enduml
 ```
-</div>
-![](usecases.svg)
+
 
 ### System Context / Landscape
 
