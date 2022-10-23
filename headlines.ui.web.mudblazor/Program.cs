@@ -1,4 +1,4 @@
-using headline.ui.blazor.web;
+using headlines.ui.web.mudblazor;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;

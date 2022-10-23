@@ -1,47 +1,36 @@
 ﻿@page "/headlinemaintenance"
 @inject HttpClient Http
+@using headline.ui.blazor.web.Shared
 
 <PageTitle>Headlines</PageTitle>
 
-<h1>Headlines</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
+<MudText Typo="Typo.h3" GutterBottom="true">HEADLINES</MudText>
+<MudText Class="mb-8">Present and maintain headlines.</MudText>
 
 @if (headlines == null)
 {
-    <p><em>Loading...</em></p>
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Headline</th>
-                <th>Image</th>
-                <th>Active</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var headline in headlines)
-            {
-                <tr>
-                    <td>@headline.Id</td>
-                    <td>
-                        <marquee bgcolor="@headline.BackgroundColour" font style="bold" scrolldelay="100">
-                            <font size="5" face="Verdana" color="@headline.ForegroundColour">@headline.Banner</font>
-                        </marquee>
-                    </td>
-                    <td>
-                        <img width="25" alt="" src="@headline.ImageUrl"/>
-                    </td>
-                    <td>
-                        <input type="checkbox" @bind="@headline.Active"/>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <MudTable Items="headlines" Hover="true" SortLabel="Sort By" Elevation="0">
+        <HeaderContent>
+            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Headline, object>(x=>x.Id)">Id</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Headline, object>(x=>x.Banner)">Headline</MudTableSortLabel></MudTh>
+            <MudTh>Image</MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Headline, object>(x=>x.Active!)">Active</MudTableSortLabel></MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="Banner. (C)">
+                <marquee bgcolor="@context.BackgroundColour" scrolldelay="100">
+                    <font size="5" face="Verdana" style="font-weight: bold" color="@context.ForegroundColour">@context.Banner</font>
+                </marquee>
+            </MudTd>
+            <MudTd DataLabel="ImageUrl"><img width="25" alt="" src="@context.ImageUrl" /></MudTd>
+            <MudTd DataLabel="Active"><input type="checkbox" @bind="@context.Active" /></MudTd>
+        </RowTemplate>
+    </MudTable>
 }
 
 @code {
@@ -55,10 +44,10 @@ else
     public class Headline
     {
         public int Id { get; set; }
-        public string Banner { get; set; }
-        public string BackgroundColour { get; set; }
-        public string ForegroundColour { get; set; }
+        public string Banner { get; set; } = "";
+        public string BackgroundColour { get; set; } = "";
+        public string ForegroundColour { get; set; } = "";
         public string? ImageUrl { get; set; }
-        public bool Active { get; set; }
+        public bool Active { get; set; } = true;
     }
 }
