@@ -60,7 +60,6 @@
 
 ### Use-case diagram
 
-<div hidden>
 ```plantuml usecases
 @startuml
 left to right direction
@@ -108,7 +107,6 @@ active ..> patch
 
 @enduml
 ```
-</div>
 ![](diagrams/usecases.svg)
 
 ### Data Model
