@@ -60,7 +60,8 @@
 
 ### Use-case diagram
 
-```plantuml
+<div hidden>
+```plantuml usecases
 @startuml
 left to right direction
 
@@ -129,6 +130,8 @@ entity Headline {
 }
 @enduml
 ```
+</div>
+![](usecases.svg)
 
 ### System Context / Landscape
 
