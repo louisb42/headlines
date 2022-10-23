@@ -18,8 +18,6 @@ else
             <tr>
                 <th>Id</th>
                 <th>Headline</th>
-                <th>Background  colour</th>
-                <th>Foreground colour</th>
                 <th>Image</th>
                 <th>Active</th>
             </tr>
@@ -29,11 +27,17 @@ else
             {
                 <tr>
                     <td>@headline.Id</td>
-                    <td>@headline.Banner</td>
-                    <td>@headline.BackgroundColour</td>
-                    <td>@headline.ForegroundColour</td>
-                    <td>@headline.ImageUrl</td>
-                    <td>@headline.Active</td>
+                    <td>
+                        <marquee bgcolor="@headline.BackgroundColour" font style="bold" scrolldelay="100">
+                            <font size="5" face="Verdana" color="@headline.ForegroundColour">@headline.Banner</font>
+                        </marquee>
+                    </td>
+                    <td>
+                        <img width="25" alt="" src="@headline.ImageUrl"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" @bind="@headline.Active"/>
+                    </td>
                 </tr>
             }
         </tbody>
