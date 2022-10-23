@@ -1,0 +1,1404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="885px" preserveAspectRatio="none" style="width:1130px;height:885px;background:#FFFFFF;" version="1.1" viewBox="0 0 1130 885" width="1130px" zoomAndPan="magnify"><defs/><g><!--MD5=[6845c7e786e56170ff8648d14118259a]
+cluster headline--><g id="cluster_headline"><rect fill="none" height="605" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="972" x="152" y="7"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="574" y="25.6094">Headline System</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="51" x="612.5" y="41.582">[System]</text></g><!--MD5=[83849a152af3db7c80ee717bcdd470c8]
+entity blazor--><g id="elem_blazor"><rect fill="#00FFFF" height="147.1406" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="179" x="168" y="418.5"/><path d="M269.3337,436.6013 A13.9123,13.9123 0 0 1 255.6913,448.3213 A10.1053,10.1053 0 0 1 253.6973,448.2003 A6.111,6.111 0 0 1 248.6149,442.4396 A5.9344,5.9344 0 0 1 260.4819,442.3558 C260.5069,443.3393 260.0808,444.2022 259.2049,444.2271 C258.2693,444.2271 257.8307,443.5594 257.8307,442.6597 L257.8307,440.1596 A1.5313,1.5313 0 0 0 256.3111,438.6268 L254.2152,438.6268 A3.6481,3.6481 0 1 0 256.91,444.7062 L256.9833,444.5969 L257.0567,444.7182 A2.5807,2.5807 0 0 0 259.2574,445.7661 A2.9088,2.9088 0 0 0 261.9521,442.7255 A7.912,7.912 0 0 0 261.7351,440.7931 A7.4043,7.4043 0 0 0 247.0956,442.3964 A7.4971,7.4971 0 0 0 254.4026,449.8007 C254.9516,449.8507 254.9516,449.8507 255.5703,449.8364 A15.8029,15.8029 0 0 0 264.045,447.3081 C264.081,447.2831 264.1169,447.3331 264.093,447.3695 A12.4392,12.4392 0 0 1 254.4029,451.332 A8.7442,8.7442 0 0 1 245.503,442.3603 A9.049,9.049 0 0 1 249.1379,435.1132 A8.8634,8.8634 0 0 1 254.3669,433.387 L257.1799,433.387 A7.9145,7.9145 0 0 0 263.0185,430.8093 A0.1093,0.1093 0 0 1 263.0779,430.7753 A0.1115,0.1115 0 0 1 263.1974,430.8275 A0.113,0.113 0 0 1 263.2129,430.8947 A7.9345,7.9345 0 0 1 261.9855,434.444 A0.1075,0.1075 0 0 0 261.9723,434.5049 A0.1098,0.1098 0 0 0 262.0447,434.5994 A0.109,0.109 0 0 0 262.1066,434.6027 A8.5054,8.5054 0 0 0 268.02,429.7267 A0.1554,0.1554 0 0 1 268.0746,429.674 A0.1497,0.1497 0 0 1 268.2216,429.674 A0.1535,0.1535 0 0 1 268.2762,429.7267 A10.779,10.779 0 0 1 269.3337,436.6013 M254.3954,440.1283 A2.188,2.188 0 1 0 256.5831,442.3161 L256.5831,440.2736 A0.1577,0.1577 0 0 0 256.4334,440.1239 " fill="#555555" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="140" x="187.5" y="469.1094">Blazor Application</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="142" x="185" y="485.082">[C#, .NET 6.0, MVVMLight,</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="62" x="226.5" y="500.1758">MudBlazor]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="255.5" y="517.3457"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="178" y="534.9551">Allows for displaying and</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="187" y="552.5645">maintaining headlines.</text></g><!--MD5=[8e59a5092f7343b02fbefdc0d932ef24]
+entity xam--><g id="elem_xam"><rect fill="#00FFFF" height="183.2344" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="218" x="677" y="268.5"/><image height="45" width="51" x="760.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAtCAIAAACMH8SWAAAB1ElEQVR4XsWY0a2DMAxFOz4rdIWu0BW6QlfoCrxUSGDucUwcQp90PnBi+16ikFS93ea5iWkaBpu7aEw+H219ntKTQoLGhH2HQCFBY+F+146jKJ0pZ9FYYMeBUM6isYW9hkPRFY0tbDQciq5ovMIuF0HpyNnrpfXXUbRooOqM9ZdCA74zVv4A2tA4cPZ47NJajjo5tIIS2tCYNUE9E87kS/IuaLkibX78ocjWZoIgl2mueMKbMaEj0y3ZnoJNENTXllkWgAkudl+mi6c2VZtQc++izpgRY4VZHs8ecsrZ8xlp26mSyfKYzRnnWrDytkltPMXX2futo43IKbqsjaxl+1clFFc6lILLw5FuNM4iVkbZmk46oxWOdDNsn5X7fuq69V2++6z7zWrLUxtPMXefZ/FtbafiW99lKfRbH2K1WR7PHrJzlqpvEW7JcVlLtqdlC7dgJWsfUBnvcGY/oHS9zY9L2jPdkly9eyPVyN5U0W/a+chZKjmbL8kaB/VyijKBuKexC21o3Cg5HNrQ+F/M0UDVWcfB3U3uf435h8tG6QNn80/MUXRFYwsbDYeiKxoL7DUQylk0FoIT6CRyOhKNCZsOgUKCxi7sexJKEI1rsHs3bO7xB6iER5W1Uz5KAAAAAElFTkSuQmCC" y="278.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="153" x="709.5" y="340.1094">Xamarin Application</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="184" x="692.5" y="356.082">[Xamarin Forms 5, .NET Standard</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="130" x="719.5" y="371.1758">2.0, MVVMLight, SQLite,</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="198" x="687" y="386.2695">Xamarin.CommunityToolkit.Markup]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="784" y="403.4395"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="706.5" y="421.0488">Allows for displaying and</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="715.5" y="438.6582">maintaining headlines.</text></g><!--MD5=[5e455b7a635aac0c010e4ec741e744cc]
+entity xamAndroid--><g id="elem_xamAndroid"><rect fill="#00FFFF" height="62.125" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="960" y="407"/><image height="22" width="102" x="983" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAWCAIAAAC9n370AAACCElEQVR4Xu1X240CQQyj/w6mBVqgBVqgBVrYGy5S5LOTTPZYhE6H5A/WcR5jZvZxOm3b/8L9fhrjAQ01wddvh61n4nzm0CHw+rtcwyyOvR0vtcy32MeyHfhY9hvMynuL/3nL5vlS8qVILZtTYsww50Ney9ENwnC7sQwxo5pyuTxCfqmWoZhC4eRWsF+EoijDy4VaQT3CWTNxJ8WBlum/UoQypSELXa+cmCEoVAPbdBZfTFwDLdOo8Uu/UKylnOz7NcwyZe1mER4fb6PjzoOgvfF0zN8UtfNLZ9/glik/u4Qh57WRz7AkB8ysyxlqmd6DyLiwjc9qyF5/kNRbVSYIS22yx+tqocvNOiT4cREug3Kc7LdpppBGLaPxltXCf67DKFDTSqjXHz6YcG/azsXDQrsS4RozCJdNJ8D5kU+umg6jQE0r4RDLsEjxYuWavmXZ4UDNyA1SRoGaVsLHMtS0Eg6xDJ8+nUX2LRv55KrpMArU8PNY1VlRZ5qWZXUQOMwuyyik1bxjzYRrIQ1feyEHbjGM1m2WlmkjWuHSMnppoihV81sBkmEdfTRhdJhlZIohJMdzlmn78d0o7LW0bFe1MCUk6zrjmQ8mZ3ZZRn9+gY5lOEaBTJ/xNVo5h9z+HfqlhUr/3bRsW01eiItQAU6j3WgH+1jLDPr5RmX7lhlocjXLoB0LgWuA+QJYIG/N9pU0iAAAAABJRU5ErkJggg==" y="417"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="970" y="455.6094">Xamarin Android</text></g><!--MD5=[65ad696442de8114f8b1e03314f0060c]
+entity xamWindows--><g id="elem_xamWindows"><rect fill="#00FFFF" height="91.125" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="125" x="971.5" y="504.5"/><image height="51" width="51" x="1008.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAzCAIAAAC1w6d9AAAA7ElEQVR4Xu3Z0Q2DIBSFYcZ3BVdwBVdwBVdwBXsTjCUH0B4tSOJJvodCK/6pPtDq3Lo2ZJpc123wvWrm+RuRhAeUcBqRhKvctCyu7/Ec1+DSv7OIYdhe/6smhOdLOrgclcrsaxhH/MSxgmXxFEVlPJXxVMZTGU9lPJXxVMZTGa9gme3ljW1lPfvFF7J9NrB9785nFYLjduC4HXh1WX6VeP4+HLNUxlMZT2U8lfFUxlMZr/WyInvaeIryyjK/9Hrpj+2uTlmS5YZPqWKPleXsT3H8sKGynAv3Qw4uXcLx/ZCDq1RzmosHPCt49PYBlef5a/q7BrwAAAAASUVORK5CYII=" y="514.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="105" x="981.5" y="582.1094">Xamarin UWP</text></g><!--MD5=[caf660ac2a54b55a5c31b5515889e628]
+entity config--><g id="elem_config"><rect fill="#C0C0C0" height="103.2188" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="438" y="199.5"/><image height="48" width="51" x="486.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAIAAAAzV9XTAAADxklEQVR4Xs1YYXnrMAwUgREYgRJ4AErABEqgBAqgBB6BECiBB8DQdvPN6kWK3ez92HI/ukiWzhdZsf3N6j7c7/fb7bYsy1/BvaGUwqHH4xHTxkDwteEigPNfh8WMBMxa1oAayPojIC/8O/VlTYQrQ4zFpDWyLFJAzXkN+qEY4kg9wkgW38pzbZUkQATyVRMVQKtTr7U9xQGRruPWsFLUQWVeclvlCbxaOjemhB+iya5DABVzrUdrqsr0tZcGzbJnkgDsmCNMzJZnMicIRQVcHBBJGy2ZN5VpweqmMijIskjqywQizqHsZZ+yLIsNEMpsatT2MXMdVZavkUZSWRAHE+lUkLttoix/1KZG3SpYadsVkCMpTucovWw5hYXJL8N3gDINrkEZhoOss/S1RlZpGp2mvFIWqlW6Mo0kTI1cME4DaBjhrcbVd2BuV6YbG78+jSxN1mtlnEllnfsWlZeSuLcjK7zMWd7HK40eIn9QdmtNqZwO86e8lC5rpIxD17TrurJrL/ZmwZg+2vmMf/hOyl76QQT20WnjyvIrUS7ASPAH9a5sTfmE8c/SLhEhs/R2XmUIeIJRXFlvNC4OMZQVAubMVZV5Dk5ryiL7PJ8BhMz71Qle+FywOW2lMi6l3mr2FIx49GvWtVVISbxOWRmCl7SBBVjtTeCMSjf6cBSMpDgR9sVDKvXvpLXatjFNdrrNbWYTKu7c++HcVo1sSq7f06XdFoXpCfP29MxvaVK0u8JnYyz94kDTn2NCS4muDouOw8Ci4zCw6DgMLNi5w/gdmVnw/wfQx/t5LNin00mT397e9nO9hFOBlg+XfnxlWLChTMv2/v5OOie1BkbiXPJRgIcg0vGMUTzjk/d4PiiwfSAMuwGZAyzYZLTGBV5/1l+NVCfn0BjfUUO612xyEliwOZ/OkX+JrMyLDc+jbZM0PSYrm8CC7fN58n5l7nGni0NXuFMfJrBgcwWrTIMPSk3vPI90J48dfkN8Zs+RgUN8gOdl2Sw6DgMLNk+6SWOiGMv6fyqMz5iPOkZHpwWbawFcBzczLpBeYxifwVEu9ATf2DU8JwwRI2VuzrE/2IJNZajwiOKXlX0ONCyp4X5fWR2wHEIZpsdz2HgOoax2It0jRsr8Su3wAAWDo3cLFuygrCaukbIMD1BMhgIs2FkZrzo8+OpYmZtz7A+2YGdldU13LGVVGA+nDPcZa7eGwymrnRR7r/2YMg2dKKud135GmYP2XBnuBQzOyjI2LxEcit4tfB3ebuOm6jfPTZwa9DylJ2PzHsWh6N3CB4Bmh58jb81zAAAAAElFTkSuQmCC" y="209.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="51" x="486.5" y="274.1094">Config</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="128" x="448" y="290.082">[C#, .NET Standard 2.0]</text></g><!--MD5=[aa3b458352135463a5a0f2d2a48ef4d9]
+entity models--><g id="elem_models"><rect fill="#C0C0C0" height="103.2188" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="438" y="61.5"/><image height="48" width="51" x="486.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAIAAAAzV9XTAAADxklEQVR4Xs1YYXnrMAwUgREYgRJ4AErABEqgBAqgBB6BECiBB8DQdvPN6kWK3ez92HI/ukiWzhdZsf3N6j7c7/fb7bYsy1/BvaGUwqHH4xHTxkDwteEigPNfh8WMBMxa1oAayPojIC/8O/VlTYQrQ4zFpDWyLFJAzXkN+qEY4kg9wkgW38pzbZUkQATyVRMVQKtTr7U9xQGRruPWsFLUQWVeclvlCbxaOjemhB+iya5DABVzrUdrqsr0tZcGzbJnkgDsmCNMzJZnMicIRQVcHBBJGy2ZN5VpweqmMijIskjqywQizqHsZZ+yLIsNEMpsatT2MXMdVZavkUZSWRAHE+lUkLttoix/1KZG3SpYadsVkCMpTucovWw5hYXJL8N3gDINrkEZhoOss/S1RlZpGp2mvFIWqlW6Mo0kTI1cME4DaBjhrcbVd2BuV6YbG78+jSxN1mtlnEllnfsWlZeSuLcjK7zMWd7HK40eIn9QdmtNqZwO86e8lC5rpIxD17TrurJrL/ZmwZg+2vmMf/hOyl76QQT20WnjyvIrUS7ASPAH9a5sTfmE8c/SLhEhs/R2XmUIeIJRXFlvNC4OMZQVAubMVZV5Dk5ryiL7PJ8BhMz71Qle+FywOW2lMi6l3mr2FIx49GvWtVVISbxOWRmCl7SBBVjtTeCMSjf6cBSMpDgR9sVDKvXvpLXatjFNdrrNbWYTKu7c++HcVo1sSq7f06XdFoXpCfP29MxvaVK0u8JnYyz94kDTn2NCS4muDouOw8Ci4zCw6DgMLNi5w/gdmVnw/wfQx/t5LNin00mT397e9nO9hFOBlg+XfnxlWLChTMv2/v5OOie1BkbiXPJRgIcg0vGMUTzjk/d4PiiwfSAMuwGZAyzYZLTGBV5/1l+NVCfn0BjfUUO612xyEliwOZ/OkX+JrMyLDc+jbZM0PSYrm8CC7fN58n5l7nGni0NXuFMfJrBgcwWrTIMPSk3vPI90J48dfkN8Zs+RgUN8gOdl2Sw6DgMLNk+6SWOiGMv6fyqMz5iPOkZHpwWbawFcBzczLpBeYxifwVEu9ATf2DU8JwwRI2VuzrE/2IJNZajwiOKXlX0ONCyp4X5fWR2wHEIZpsdz2HgOoax2It0jRsr8Su3wAAWDo3cLFuygrCaukbIMD1BMhgIs2FkZrzo8+OpYmZtz7A+2YGdldU13LGVVGA+nDPcZa7eGwymrnRR7r/2YMg2dKKud135GmYP2XBnuBQzOyjI2LxEcit4tfB3ebuOm6jfPTZwa9DylJ2PzHsWh6N3CB4Bmh58jb81zAAAAAElFTkSuQmCC" y="71.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="112" x="456" y="136.1094">Models (DTOs)</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="128" x="448" y="152.082">[C#, .NET Standard 2.0]</text></g><!--MD5=[e2307af040e3f87d22824e7603ca28ec]
+entity api--><g id="elem_api"><rect fill="#909090" height="103.2188" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="438" y="492.5"/><image height="48" width="51" x="486.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAIAAAAzV9XTAAADp0lEQVR4Xu2YIXfjMBCEjYtLg48GC5cGhwYfNg0+qp/cicbajHYlxb13rzW4AX2OtDv6vJIlvS55n2632/V6Xdf1t+hWlFJi1/1+92ljIfhS9CFC45+qxWcEYdTUCjTA+iWiL9p38kUmysgQ84IsYtECNOdWbAcx4Gg90giLb2W5QzJEIF+ZSABWs27ZnnCQt6u6FjVEVSSzkg/JrFo6NoZEO6Dprl0QiTnXozlVMn3ttUiz+mRwxxhuYC55JnMAV1TI4CBvWmzp3CXTguUuGQgiFk1tmmDEMdQ97SOLWFwArsyeDN2cR8WyOdJIkjk4/ES6ew1NGZHFj9qTxYKlsl1BMZJwOkaqZYspLEx8Gb4DyDQ4OzJ0O6yzrGuNzLJodJj0isxVK1UyjaQaslgwDgNpGGVLjbNvwthGphsbvz6NTAXrNRlHUqxz3aLiVFK3cmS5lznL+1ilsYbo78iuZVG2rpsaMjeGYY3I2HUJu66RXWqxuwVj+mjn28j4Tuqe6kEE99FpY2TxlYgLMRL+jt7IWsunNrK1XCJcZqrLuU15iicY4VK70RgcYojlAubOWcksB6c1seg+z2cAJeNuK8EKHws2t80k41TqrWZPwah7vWZdSoXUxOoUyRC8hg3MaSNTU7UbfTgqRhJOwDYfWmn7TtsHGTdAyzS77jbTlcKd63o4l1mjm5rr9/RRbovi9NRiy9Myv8SkKneFx8JY68WBP+3ZJ5QU31Tlz83j6D/Z1+XJ4grjd7QsPvIvhHW838fHnU4nTX57e9vv9VJmBVs+fNTjK8qPCjIt2/v7O+3MdCliJM4l64V4CCIdz+jFMz55i+eDCtsHwrAbbIO16pA9WosXfO1Z/2qkNnIMjbEd1aVbzSYnQZ9Mx4h/NVIbrdhouZdtkj8tJpJN1CfLkryfzFqs0eCwKqxRHybyEZzBLMPgg9KftvIs0hp57PAb4jPXHB3YxQe0vCybJzuOPBlPusnCRDHW9n8qjI+a95pGR6cn41xAl8HNjBOk1xjGR7GXEz3RF3YNy3Fd1IhMQmbaH+yDSIYKjyx+mOzRUbSGBffzZHngcggyDI9nt/EcgixXI90jRmR2pTZZgOqfkeXgNSKLsgDVpMvJB0UyXnV48OUxmf2ca3+wD4pkubU7FlkWx8OR4T6zlFvD4chyNcXe+31kGjohy9V3+R4yE3/PyXAvYHAki+peItjlW3vaDm/7jZuq3Ty7OhXpecqWqO49il2+tadPER5mjrsjCAIAAAAASUVORK5CYII=" y="502.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="26" x="499" y="567.1094">API</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="128" x="448" y="583.082">[C#, .NET Standard 2.0]</text></g><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><g id="elem_db"><path d="M725,496.5 C725,486.5 786,486.5 786,486.5 C786,486.5 847,486.5 847,496.5 L847,585.7188 C847,595.7188 786,595.7188 786,595.7188 C786,595.7188 725,595.7188 725,585.7188 L725,496.5 " fill="#909090" style="stroke:#78A8D8;stroke-width:0.5;"/><path d="M725,496.5 C725,506.5 786,506.5 786,506.5 C786,506.5 847,506.5 847,496.5 " fill="none" style="stroke:#78A8D8;stroke-width:0.5;"/><image height="45" width="102" x="735" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAtCAIAAADTIomaAAADvElEQVR4Xu2asZbiMAxF+Qi3U09LTZ2WmpZ6a1pqWn/yKHknQjzZIWCFXc/ZWxFFsZwXWXZMdnl7LpdLmrler3y6N3ZsiEbFUk6nEzt1xSiZPPnDNrBaM9yLrthBr8sGsE4pfX196Q/uSD/sPqbXfr+3h9yRfthEsu/vb6uO4C3ckX4YJfsTyvl8JnUEX9e4I/0QLxlJA3XY9F8yhQoWpCEL4I70Q7BkpMswDMVxKvWOO9IPo2TnIHQNoeRfl2I5VjKvi6/6gHvRFWGS0TICi1VrUXp/zQyTjHSRpv1UALgLvREjmZR5K4oc5kqKHY9H7kJvjJKdmiFd8i+tYiBest+dYjlEMkooaVSksRaFg/dJgGRWFJk3cyXFZKHLwftklOzYhtUlP25bWzhyt8RLZg8VDtszrZLZQoahZ4QakTXt7XbjsD3TKlky263SnF2gScsUzI5ZqXoipVxLPhZfKIvq06owbZzUo2RDA7gT7Sh+oE3qvaSbLHrvkWdna1HQpt/wgJ2MAK194F+FAMnAafqrTQ/BMK3RBOwLPUSeqBmLdoDUI/Xz9EhSKbXDaZIs1UelGgEdKj4pap4WqEM5uFKy9traKpnukWWXYjaMtxSxD2AZ77ZSMn/hq4ySvQ3Cp9JWD+3w4H58ThG4lq0l4ImVM0CIYS4Fr7I+9Zok06TAfgZ+p9InBHaupFOK+vCJEshx69wi2UujtUmyw5xoecWEBQdwLL2f2zH+FMlicl4vmXTbCoQLFySDg66HIiUrCmGhnVs6W7MXkTsk56eSSe5rB1Sg20SaJhP8tpeITFRzcqBky4tSi4ZPj89Wjca3yhuSAVxI0nhLnhNZDzVcq2S1Necydo9bjSED82mm55JA3uKNab7NVskO0yTwxj8gmib2tulwAb8c2UKy4u8Aydb0soj+VawWOlwAnnYPbqVkKwcmslja9C+2AZKtGZV2AWUhjXyFquHdYiWDm7UoAZL5lPbUwqfH5WieR9zySPd65QbJvAWk0gJTouxkimENXoQaLZJKL9K1J3mYJmK2zhT1Untx4rb+GHH0SKxFl5Y+kDxdKQXjt7KswYvYRmsgvHWu7W0oySUgLilG1Ak0TeuM24QYdcdNPZHFqguAj99Zmpu8I8b7F9kI8x73IBX0GUrhO0yT7JoKmB93RxYCcYccfMEj0j0Z0cVqIP0cpu+X1BLwEfvKm38b+w0Wn/sbBEj2tOK2Y3ONz32cAMmoLmyEfT/lc58lQLKP/af7j4zQAMk+DH1e+rS0h/MDHQZa5VOJXIsAAAAASUVORK5CYII=" y="510.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="72" x="750" y="572.1094">Database</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="764.5" y="588.082">[SQLite]</text></g><!--MD5=[6e3f85ee04c1ef70874a4548f6dd9475]
+entity apiTest--><g id="elem_apiTest"><rect fill="#909090" height="103.2188" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="95" x="464.5" y="337.5"/><image height="48" width="51" x="486.5" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAAwCAIAAAAzV9XTAAADp0lEQVR4Xu2YIXfjMBCEjYtLg48GC5cGhwYfNg0+qp/cicbajHYlxb13rzW4AX2OtDv6vJIlvS55n2632/V6Xdf1t+hWlFJi1/1+92ljIfhS9CFC45+qxWcEYdTUCjTA+iWiL9p38kUmysgQ84IsYtECNOdWbAcx4Gg90giLb2W5QzJEIF+ZSABWs27ZnnCQt6u6FjVEVSSzkg/JrFo6NoZEO6Dprl0QiTnXozlVMn3ttUiz+mRwxxhuYC55JnMAV1TI4CBvWmzp3CXTguUuGQgiFk1tmmDEMdQ97SOLWFwArsyeDN2cR8WyOdJIkjk4/ES6ew1NGZHFj9qTxYKlsl1BMZJwOkaqZYspLEx8Gb4DyDQ4OzJ0O6yzrGuNzLJodJj0isxVK1UyjaQaslgwDgNpGGVLjbNvwthGphsbvz6NTAXrNRlHUqxz3aLiVFK3cmS5lznL+1ilsYbo78iuZVG2rpsaMjeGYY3I2HUJu66RXWqxuwVj+mjn28j4Tuqe6kEE99FpY2TxlYgLMRL+jt7IWsunNrK1XCJcZqrLuU15iicY4VK70RgcYojlAubOWcksB6c1seg+z2cAJeNuK8EKHws2t80k41TqrWZPwah7vWZdSoXUxOoUyRC8hg3MaSNTU7UbfTgqRhJOwDYfWmn7TtsHGTdAyzS77jbTlcKd63o4l1mjm5rr9/RRbovi9NRiy9Myv8SkKneFx8JY68WBP+3ZJ5QU31Tlz83j6D/Z1+XJ4grjd7QsPvIvhHW838fHnU4nTX57e9vv9VJmBVs+fNTjK8qPCjIt2/v7O+3MdCliJM4l64V4CCIdz+jFMz55i+eDCtsHwrAbbIO16pA9WosXfO1Z/2qkNnIMjbEd1aVbzSYnQZ9Mx4h/NVIbrdhouZdtkj8tJpJN1CfLkryfzFqs0eCwKqxRHybyEZzBLMPgg9KftvIs0hp57PAb4jPXHB3YxQe0vCybJzuOPBlPusnCRDHW9n8qjI+a95pGR6cn41xAl8HNjBOk1xjGR7GXEz3RF3YNy3Fd1IhMQmbaH+yDSIYKjyx+mOzRUbSGBffzZHngcggyDI9nt/EcgixXI90jRmR2pTZZgOqfkeXgNSKLsgDVpMvJB0UyXnV48OUxmf2ca3+wD4pkubU7FlkWx8OR4T6zlFvD4chyNcXe+31kGjohy9V3+R4yE3/PyXAvYHAki+peItjlW3vaDm/7jZuq3Ty7OhXpecqWqO49il2+tadPER5mjrsjCAIAAAAASUVORK5CYII=" y="347.5"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="72" x="476" y="412.1094">API Tests</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="474.5" y="428.082">[C#, .NET 6.0]</text></g><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><g id="elem_user"><rect fill="#08427B" height="88.125" rx="2.5" ry="2.5" style="stroke:#073B6F;stroke-width:0.5;" width="68" x="7" y="718"/><image height="48" width="48" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="728"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="36" x="23" y="792.6094">User</text></g><!--MD5=[e29493a8775effcafa538aa0485107d1]
+entity auth--><g id="elem_auth"><rect fill="#1168BD" height="40.125" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="65" x="225" y="635"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="45" x="235" y="661.6094">Auth0</text></g><!--MD5=[df70fc9008428dff43f3967b3e1e5139]
+link blazor to config--><g id="link_blazor_config"><path d="M335.26,418.23 C367.01,387.77 404.23,352.13 438,320 C441.99,316.2 446.1,312.29 450.26,308.36 " fill="none" id="blazor-to-config" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="456.35,302.58,448.4807,305.9079,452.6093,310.2616,456.35,302.58" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="391" y="349.457"> </text></g><!--MD5=[e58488fd1b957346588f5b2fd3b484b2]
+link blazor to models--><g id="link_blazor_models"><path d="M293.46,418.4 C326.21,353.1 378.87,256.75 438,182 C441.05,178.14 444.32,174.29 447.72,170.5 " fill="none" id="blazor-to-models" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="453.15,164.6,445.526,168.4567,449.9418,172.5188,453.15,164.6" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="391" y="226.457"> </text></g><!--MD5=[731e344dbb2d3beab85eb0e11ad00a63]
+link blazor to api--><g id="link_blazor_api"><path d="M347.17,510.26 C374.08,515.8 403.5,521.86 429.89,527.3 " fill="none" id="blazor-to-api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="437.98,528.96,430.7507,524.4062,429.539,530.2825,437.98,528.96" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="378" y="513.457">https</text></g><!--MD5=[a8eaa315f84d1bf8d319ec7ce788439b]
+link models to xam--><g id="link_models_xam"><path d="M570.02,164.78 C601.24,193.13 640.96,229.2 677.73,262.59 " fill="none" id="models-to-xam" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="684.09,268.36,680.1858,260.7602,676.1513,265.2013,684.09,268.36" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="630" y="204.457"> </text></g><!--MD5=[5acd80e1bf07e062d5fc4e40da633a3e]
+link config to xam--><g id="link_config_xam"><path d="M586.25,280.35 C611.81,290.6 641.17,302.36 669.34,313.65 " fill="none" id="config-to-xam" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="676.85,316.66,670.5364,310.9034,668.308,316.4743,676.85,316.66" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="630" y="289.457"> </text></g><!--MD5=[84ac9564d355a1658d3d27b564ad7954]
+link api to xam--><g id="link_api_xam"><path d="M586.25,494.45 C612.03,477.01 641.67,456.96 670.05,437.76 " fill="none" id="api-to-xam" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="676.85,433.16,668.5432,435.1591,671.9059,440.1282,676.85,433.16" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="617" y="454.457">https</text></g><!--MD5=[03dffa84655917f02326d19c2c230562]
+link xam to xamAndroid--><g id="link_xam_xamAndroid"><path d="M895.26,394.33 C914.32,400.37 933.86,406.57 952.01,412.32 " fill="none" id="xam-to-xamAndroid" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="959.7,414.76,952.978,409.486,951.1677,415.2063,959.7,414.76" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="926" y="401.457"> </text></g><!--MD5=[d77de9a38e5368345c617ff3b3e05fd1]
+link xam to xamWindows--><g id="link_xam_xamWindows"><path d="M895.26,443.61 C919.89,462.64 945.33,482.29 967.54,499.44 " fill="none" id="xam-to-xamWindows" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="974.02,504.45,969.5208,497.1866,965.8542,501.9359,974.02,504.45" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="926" y="466.457"> </text></g><!--MD5=[a7e9bb92dff1e065bd6fae4beb244bcc]
+link api to apiTest--><g id="link_api_apiTest"><path d="M512,492.39 C512,478.47 512,463.3 512,448.97 " fill="none" id="api-to-apiTest" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="512,440.65,509,448.65,515,448.65,512,440.65" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="3" x="499" y="471.457"> </text></g><!--MD5=[1b9dbcfdb69d97b7ce5f2d963fc4ed75]
+link api to db--><g id="link_api_db"><path d="M586.25,543.19 C626.79,542.74 676.87,542.19 716.61,541.75 " fill="none" id="api-to-db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="724.93,541.66,716.8983,538.7459,716.9626,544.7455,724.93,541.66" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="23" x="620" y="539.457">TCP</text></g><!--MD5=[f86fe765271e7de90706214ce21d124c]
+link user to auth--><g id="link_user_auth"><path d="M75.05,745.52 C113.43,726.37 176.7,694.81 217.48,674.47 " fill="none" id="user-to-auth" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="224.82,670.8,216.3222,671.6876,219.0012,677.0563,224.82,670.8" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="106" y="714.457">https</text></g><!--MD5=[462fbc53fe1d5f1280cffa8a8f1237ca]
+link user to xamAndroid--><g id="link_user_xamAndroid"><path d="M75.25,769.32 C117.25,777.91 191.87,791 256.5,791 C256.5,791 256.5,791 787,791 C898.09,791 891.8,690.31 930,586 C945.81,542.83 932.66,523.96 960,487 C963.29,482.55 967.12,478.37 971.26,474.49 " fill="none" id="user-to-xamAndroid" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="977.53,469,969.5288,471.9969,973.4723,476.519,977.53,469" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="497.5" y="787.457">https</text></g><!--MD5=[8e932ce125dbbec77e55819b4ea431f2]
+link user to xamWindows--><g id="link_user_xamWindows"><path d="M75.05,793.39 C114.81,827.75 185.16,878 256.5,878 C256.5,878 256.5,878 787,878 C856.1,878 882,866.71 930,817 C987.27,757.69 1013.57,663.08 1024.99,603.86 " fill="none" id="user-to-xamWindows" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="1026.5,595.74,1022.0811,603.0525,1027.9789,604.155,1026.5,595.74" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="497.5" y="874.457">https</text></g><!--MD5=[5b7bdbd85e1fcbf5f64862b175169e57]
+reverse link blazor to user--><g id="link_blazor_user"><path d="M181.94,572.01 C168.98,586.71 155.86,602.12 144,617 C117.91,649.73 90.75,688.61 71.03,717.87 " fill="none" id="blazor-backto-user" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="187.48,565.75,179.9252,569.7407,184.412,573.7242,187.48,565.75" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="106" y="625.457">https</text></g><!--MD5=[a8c31a40cb06861dd3347320349d8112]
+link auth to xamAndroid--><g id="link_auth_xamAndroid"><path d="M290.13,656.89 C404.36,663.14 794.16,679.1 895,613 C947.7,578.46 918.08,534.04 960,487 C964.07,482.43 968.66,478.1 973.49,474.03 " fill="none" id="auth-to-xamAndroid" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="979.74,469.02,971.6204,471.6795,975.3712,476.3626,979.74,469.02" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="617" y="657.457">https</text></g><!--MD5=[2d2a348f675e12070fde0035724b8750]
+link auth to xamWindows--><g id="link_auth_xamWindows"><path d="M290.17,666.47 C391.17,700.99 711.8,794.37 930,675 C960.35,658.4 985.31,628.89 1003.06,602.71 " fill="none" id="auth-to-xamWindows" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="1007.64,595.79,1000.7236,600.8063,1005.7274,604.1172,1007.64,595.79" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="617" y="728.457">https</text></g><!--MD5=[e56c53ca0d498896c05f15b646ee65ad]
+link auth to blazor--><g id="link_auth_blazor"><path d="M257.5,634.69 C257.5,619.04 257.5,596.29 257.5,573.54 " fill="none" id="auth-to-blazor" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="257.5,565.51,254.5,573.51,260.5,573.51,257.5,565.51" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="231.5" y="605.207">https</text></g><!--MD5=[539ea7dee3070015b1cf2bac5174e1fe]
+link auth to api--><g id="link_auth_api"><path d="M290.22,641.05 C325.18,625.69 382.75,600.38 430.33,579.46 " fill="none" id="auth-to-api" style="stroke:#C0C0C0;stroke-width:1.0;"/><polygon fill="#C0C0C0" points="437.88,576.14,429.3487,576.6059,431.7587,582.1007,437.88,576.14" style="stroke:#C0C0C0;stroke-width:1.0;"/><text fill="#C0C0C0" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="29" x="378" y="586.457">https</text></g><!--MD5=[d915b09f70ee793a633d58d6f7af3091]
+@startuml landscape
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
+!includeurl SPRITESURL/xamarin.puml
+!includeurl SPRITESURL/microsoft-windows.puml
+!includeurl SPRITESURL/android.puml
+!includeurl SPRITESURL/sqlite.puml
+!includeurl SPRITESURL/dotnet.puml
+
+sprite blazor <svg viewBox="0 0 24 24">
+<path fill="#555555" d="M23.8337 8.1013a13.9123 13.9123 0 0 1-13.6424 11.72 10.1053 10.1053 0 0 1-1.994-.121 6.111 6.111 0 0 1-5.0824-5.7607 5.9344 5.9344 0 0 1 11.867-.0838c.025.9835-.4011 1.8464-1.277 1.8713-.9356 0-1.3742-.6677-1.3742-1.5674v-2.5001a1.5313 1.5313 0 0 0-1.5196-1.5328H8.7152a3.6481 3.6481 0 1 0 2.6948 6.0794l.0733-.1093.0734.1213a2.5807 2.5807 0 0 0 2.2007 1.0479 2.9088 2.9088 0 0 0 2.6947-3.0406 7.912 7.912 0 0 0-.217-1.9324 7.4043 7.4043 0 0 0-14.6395 1.6033 7.4971 7.4971 0 0 0 7.307 7.4043s.549.05 1.1677.0357a15.8029 15.8029 0 0 0 8.4747-2.5283c.036-.025.0719.025.048.0614a12.4392 12.4392 0 0 1-9.6901 3.9625A8.7442 8.7442 0 0 1 .003 13.8603a9.049 9.049 0 0 1 3.6349-7.2471 8.8634 8.8634 0 0 1 5.229-1.7262h2.813a7.9145 7.9145 0 0 0 5.8386-2.5777.1093.1093 0 0 1 .0594-.034.1115.1115 0 0 1 .1195.0522.113.113 0 0 1 .0155.0672 7.9345 7.9345 0 0 1-1.2274 3.5493.1075.1075 0 0 0-.0132.0609.1098.1098 0 0 0 .0724.0945.109.109 0 0 0 .0619.0033 8.5054 8.5054 0 0 0 5.9134-4.876.1554.1554 0 0 1 .0546-.0527.1497.1497 0 0 1 .147 0 .1535.1535 0 0 1 .0546.0527 10.779 10.779 0 0 1 1.0575 6.8746zm-14.9383 3.527a2.188 2.188 0 1 0 2.1877 2.1878v-2.0425a.1577.1577 0 0 0-.1497-.1497Z"/>
+</svg>
+
+AddElementTag("ui", $bgColor="cyan")
+AddElementTag("lib", $bgColor="silver")
+AddElementTag("test", $bgColor="#909090")
+AddElementTag("db", $bgColor="#909090")
+AddElementTag("api", $bgColor="#909090")
+
+AddRelTag("authRel", $textColor="#c0c0c0", $lineColor="#c0c0c0")
+
+HIDE_STEREOTYPE()
+LAYOUT_LEFT_RIGHT()
+
+Person(user, "User")
+System_Boundary(headline, "Headline System") {
+	'BLAZOR
+	Component(blazor, "Blazor Application", "C#, .NET 6.0, MVVMLight, MudBlazor", "Allows for displaying and maintaining headlines.", $sprite="blazor", $tags="ui")
+
+	'XAMARIN
+	Component(xam, "Xamarin Application", "Xamarin Forms 5, .NET Standard 2.0, MVVMLight, SQLite, Xamarin.CommunityToolkit.Markup", "Allows for displaying and maintaining headlines.", $sprite="xamarin", $tags="ui")
+	Component(xamAndroid, "Xamarin Android", $sprite="android", $tags="ui")
+	Component(xamWindows, "Xamarin UWP", $sprite="microsoft-windows", $tags="ui")
+
+	'LIBRARY
+	Component(config, "Config", "C#, .NET Standard 2.0", $sprite="dotnet", $tags="lib")
+	Component(models, "Models (DTOs)", "C#, .NET Standard 2.0", $sprite="dotnet", $tags="lib")
+
+	'API
+	Component(api, "API", "C#, .NET Standard 2.0", $sprite="dotnet", $tags="api")
+	ComponentDb(db, "Database", "SQLite", $sprite="sqlite", $tags="db")
+	Component(apiTest, "API Tests", "C#, .NET 6.0", $sprite="dotnet", $tags="test")
+
+}
+System(auth, "Auth0")
+
+Rel(blazor, config, " ")
+Rel(blazor, models, " ")
+Rel(blazor, api, "https")
+
+Rel(models, xam, " ")
+Rel(config, xam, " ")
+Rel(api, xam, "https")
+
+Rel(xam, xamAndroid, " ")
+Rel(xam, xamWindows, " ")
+
+Rel_R(api, apiTest, " ")
+Rel(api, db, "TCP")
+
+Rel(user, auth, "https", $tags="authRel")
+Rel(user, xamAndroid, "https", $tags="authRel")
+Rel(user, xamWindows, "https", $tags="authRel")
+Rel_L(user, blazor, "https", $tags="authRel")
+
+Rel(auth, xamAndroid, "https", $tags="authRel")
+Rel(auth, xamWindows, "https", $tags="authRel")
+Rel(auth, blazor, "https", $tags="authRel")
+Rel(auth, api, "https", $tags="authRel")
+
+ @enduml
+
+@startuml landscape
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    BorderStyle dashed
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<boundary>>StereotypeFontColor transparent
+skinparam rectangle<<boundary>>StereotypeFontColor transparent
+
+
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+sprite $robot [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000005BFFFFFFFFFFFFFFFFFFFFFE9100000000000
+0000000000AFFFFFFFFFFFFFFFFFFFFFFFFFE30000000000
+0000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFE1000000000
+000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000699405FFFFFFC427FFFFFFFFFC427FFFFFFE009982000
+008FFF705FFFFFE10006FFFFFFFE00007FFFFFE00FFFF100
+00CFFF705FFFFFA00001FFFFFFF900002FFFFFE00FFFF500
+00DFFF705FFFFFB00002FFFFFFFA00003FFFFFE00FFFF500
+00DFFF705FFFFFF4000AFFFFFFFF3000BFFFFFE00FFFF500
+00DFFF705FFFFFFFA8DFFFFFFFFFFA8DFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00CFFF705FFFFFF87777777777777777CFFFFFE00FFFF500
+008FFF705FFFFFF100000000000000009FFFFFE00FFFF100
+000699405FFFFFF76666666666666666CFFFFFE009982000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFF7000000000
+0000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFD0000000000
+00000000004CFFFFFFFFFFFFFFFFFFFFFFFF910000000000
+000000000000011111111111111111111110000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $robot2 [48x48/16] {
+000000000000000088888888888888880000000000000000
+000000000000000AFFFFFFFFFFFFFFFFA000000000000000
+00000000000000CFFFFFFFFFFFFFFFFFFC00000000000000
+00000000000004EFFFFFFFFFFFFFFFFFFE40000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFFA0000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000004CFFFFFFFFFFFFFFFFFFC40000000000000
+000000488888848CFFFFFFFFFFFFFFFFC848888884000000
+00000CFFFFFFFFC888888888888888888CFFFFFFFFC00000
+00008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000
+0000CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0000CFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFC0000
+00008FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF80000
+00000CFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFC00000
+000000488887578888888888888888888864688884000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sprite $xamarin [51x45/16] {
+000000000000077777777777777777777777770000000000000
+000000000001777777777777777777777777777100000000000
+000000000007777777777777777777777777777700000000000
+000000000067777777777777777777777777777760000000000
+000000000077777777777777777777777777777770000000000
+000000000777777777777777777777777777777777000000000
+000000000777777777777777777777777777777777000000000
+000000007777777777777777777777777777777777700000000
+000000037777777777777777777777777777777777730000000
+000000077777777777777777777777777777777777770000000
+000000777777777777777777777777777777777777777000000
+000000777777775000067777777777760000677777777000000
+000007777777777000007777777777700000777777777700000
+000017777777777700003777777777300007777777777710000
+000077777777777700000777777777000007777777777770000
+000677777777777770000177777771000077777777777776000
+000777777777777771000077777770000177777777777777000
+007777777777777777000007777700000777777777777777700
+007777777777777777400007777700004777777777777777700
+077777777777777777700000777000007777777777777777770
+277777777777777777760000474000067777777777777777772
+777777777777777777770000070000077777777777777777777
+777777777777777777777000000000777777777777777777777
+777777777777777777770000070000077777777777777777777
+277777777777777777760000575000067777777777777777772
+077777777777777777700000777000007777777777777777770
+007777777777777777300007777700003777777777777777700
+007777777777777777000007777700000777777777777777700
+000777777777777770000077777770000077777777777777000
+000577777777777770000277777772000077777777777775000
+000077777777777700000777777777000007777777777770000
+000007777777777600004777777777400006777777777710000
+000007777777777000007777777777700000777777777700000
+000000777777775000077777777777760000577777777000000
+000000777777777777777777777777777777777777777000000
+000000077777777777777777777777777777777777770000000
+000000037777777777777777777777777777777777730000000
+000000007777777777777777777777777777777777700000000
+000000000777777777777777777777777777777777000000000
+000000000777777777777777777777777777777777000000000
+000000000077777777777777777777777777777770000000000
+000000000057777777777777777777777777777750000000000
+000000000007777777777777777777777777777700000000000
+000000000000777777777777777777777777777000000000000
+000000000000077777777777777777777777770000000000000
+}
+sprite $microsoft-windows [51x51/16] {
+000000000000000000000000000000000000000000000003777
+000000000000000000000000000000000000000027777777777
+000000000000000000000000000000000277777777777777777
+000000000000000000000000001677777777777777777777777
+000000000000000000015006777777777777777777777777777
+000000000000277777777006777777777777777777777777777
+000014777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+554443333322222211110000000000000000000000000000000
+000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777007777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+777777777777777777777006777777777777777777777777777
+000147777777777777777006777777777777777777777777777
+000000000013777777777006777777777777777777777777777
+000000000000000000167006777777777777777777777777777
+000000000000000000000000004777777777777777777777777
+000000000000000000000000000000000377777777777777777
+000000000000000000000000000000000000000037777777777
+000000000000000000000000000000000000000000000002777
+}
+sprite $android [102x22/16] {
+000000000000000000000000000000000000000000000000000000000000000000000000000000001660000000000000000000
+000000000000000000000000000000000000000000000000666500000000000000000000000000006666000000000000006666
+000000000000000000000000000000000000000000000000666500000000000000000000000000016666000000000000006666
+000000000000000000000000000000000000000000000000666500000000000000000000000000006666000000000000006666
+000000000000000000000000000000000000000000000000666500000000000000000000000000000550000000000000006666
+000000000000000000000000000000000000000000000000666500000000100000000000000000000000000000000000006666
+000056666661566600000016666662000000000266666640666500000666600000566666640000006666000000666666606666
+000666666666666600000566666666600000005666666666666500016666600016666666666000006666000036666666666666
+006666666666666600005666666666660000066666666666666500066666600166666666666600006666000366666666666666
+066666610266666600016666643666664000466666201566666500666665300666663004666660006666000666664003666666
+066662000002666600066663000016666000666650000006666500666600005666600000066663006666005666600000056666
+666650000000566600066660000005666000666600000000666500666500006666000000016666006666006666000000006666
+666600000000566600066640000002666204666300000000666501666200006666000000006666006666006666000000006666
+666600000000566600066640000002666205666100000000666501666200006665000000006666006666006666000000006666
+666600000000566600066640000002666205666100000000666501666200006665000000006666006666006666000000006666
+666600000000566600066640000002666203666500000000666501666200006666000000006666006666006666000000006666
+466660000000666600066640000002666200666600000004666501666200006666200000046666006666006666400000006666
+066666000005666600066640000002666200666660000046666501666200003666620000466661006666003666630000066666
+056666665666666600066640000002666200066666655666666501666200000666666556666660006666000666666556666666
+006666666666666600066640000002666200046666666666666501666200000066666666666600006666000066666666666666
+000666666666566600066640000002666200001666666662666501666200000006666666665000006666000006666666666666
+000005666630566600066640000002666200000036666600666501666200000000056666500000006666000000066666006666
+}
+sprite $sqlite [102x45/16] {
+0000000000000000000000000000000003DDD20000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000DDDDDD6000000000000000000000000000000000000000000000000000000000000000
+0299999999999999999999999999999DDDDDDDD000000000000000000000000000000000000000000000000000000000000000
+293333333333333333333333333333DDDDDDCDDC00000000000000000000000000000000000000000000000000000000000000
+93333333333333333333333333333DDDDDDADDDD00000000000000000000000000000000000000000000000000000000000000
+9333333333333333333333333333BDDDDDBDDDDD00000000000000000000000000000000000000000000000000000000000000
+9444444444444444444444444445DDDDDD9DDDDD00000000000000000000000000000000000000000000000000000000000000
+944444444444444444444444444DDDDDD0DDDDDD00000000000000000000000000000000000000000000000000000000000000
+94444444444444444444444444ADDDDD0DDDDDDD00000000000000000000000000000000000000000000000000000000000000
+94444444444444444444444444DDDDD85DDDDDD300000000000000000000000000000000000000000000000000000000000000
+9555555555555555555555555CDDDDD0DDDDDDD000000000000000000000000000000000000000000000000000000000000000
+9555555555555555555555555DDDDD09DDDDDDD000000000000000000000000000000000000000000000000000000000000000
+955555555555555555555555BDDDDC0DDDDDDD2000000000000000000000000000000000000000000000000000000000000000
+955555555555555555555555DDDDD0ADDDDDDD0000000000000000000000000000000000000000000000000000000000000000
+955555555555555555555558DDDD80DDDDDDD70000000000000000000000000000000000000000000000000000000000000000
+96666666666666666666666DDDDD09DDDDDDD00000000000000000000000000000000000000000000000000000000000000000
+96666666666666666666666DDDD80DDDDDDD700000000000000000000000000000000000000000000000000000000000000000
+96666666666666666666669DDDD07DDDDDDD000000000000000000000000000000000000000000000000000000000000000000
+9666666666666666666666DDDDB0DDDDDDD4000000000000000000000000000000000000000000000000000000000000000000
+9777777777777777777777DDDD03DDDDDDD0000000000000000000000000000000000000000000000000000000000000000000
+9777777777777777777777DDDD0DDDDDDD00000000000000000000000000000000000000000000000000000000000000000000
+9777777777777777777779DDD40DDDDDC100000000000000000000000000000000000000000000000000000000000000000000
+977777777777777777777DADD08DDD9000003DDDB1A0000000006DDDDB10000008DDDDD0000000000000000000000000000000
+988888888888888888888DBDD0DD98DD000C50000DD0000000BD300000BD0000000DDC00000000000000000000000000000000
+988888888888888888888DDD60DDDDD8004D000000D000000DD000000006D500000CD900000000000000000000000000000000
+98888888888888888888DADD08DDDDD000DD000000C00000DD0000000000CD30000CD90000000000C100000000000000000000
+98888888888888888888DCDD0DDDDD0000DD00000000000ADD00000000000DD0000CD90000000000DD00000000000000000000
+99999999999999999999DDDC0DDDD20000CDC0000000000DD000000000000DDB000CD800000000000000000010000000000000
+99999999999999999999ADD55DDD6000003DDD000000003DD0000000000008DD000CD800000000000000000C10000000000000
+999999999999999999999DD0DDC00000000DDDD7000000CDD0000000000002DD000CD80000000000091000CD100000000CDA00
+999999999999999999999DD0D70000000000BDDDD00000DDD0000000000001DD000CD8000000006BDD10011D3110000AC0DDD0
+999999999999999999999DD0A0000000000000DDDD1000DDD0000000000001DD000CD800000000001D10000D1000002D000DD0
+999999999999999999999BD3000000000000000ADDD000CDD0000000000002DD000CD700000000000D10000D100000D1000D30
+9999999999999999999999A200000000000000001DDD000DD000000000000ADD000CD700000000000D10000D100000D000D000
+999999999999999999999970000000000000000004DD000DD000000000000DD4000CD700000000001D10000D100002DCB10000
+9999999999999999999999300000000000B0000000DD0001DD00000000000DD0000CD700000000001D10000D100001D0000000
+9999999999999999999999100000000000D0000000DB0000AD2000000000DD00000CD700000000001D10001D100000D600000C
+8999999999999999999999000000000000D5000001D0000009D00000000DD000000DDA000000D0002D20000D200C00DD0000B4
+0999999999999999999999000000000000DD90004D000000000DB00004D90000002DDD81126DD000ADC0000DDBD0000DDDDDD0
+000111111111111111111110000000000020039A30000000000008DDD100000000111111111110000000000272000000385000
+0000000000000000000000300000000000000000000000000000004DDD00000000000000000000000000000000000000000000
+00000000000000000000007000000000000000000000000000000008DDD0000000000000000000000000000000000000000000
+0000000000000000000000C000000000000000000000000000000000BDDD000000000000000000000000000000000000000000
+0000000000000000000000400000000000000000000000000000000004DDD00000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000004DDDD10000000000000000000000000000000000000
+}
+sprite $dotnet [51x48/16] {
+000000000000056344445596320000000000000027788882111
+0000000000069999954BBBB8853200000000000778888882110
+000000000069999988BAAAAA884310000000007788888832100
+00000000179999AA6778AAAAA88440000000066888888832200
+00000000699AAAA46168AAAAA77542000000066889999332000
+000000057AAAAA4520667999997755000000557889999322000
+00000047AAAAA55400357999997755000000558899994420000
+00000269AAAA754000057799997655400000558899994320000
+0000047AAAA9660000045799999776600004477999954300000
+000037AAAAA7750000055799999776600004489999954000000
+000047AAAA77700000035769999876610003399999554000000
+00035AAAAA8860000000567AAAAA77750023599999650000000
+00037AAAA886600000006678AAAA77770033999996620000000
+0023AAAA9887100000006677AAAA87880028AAAA96600000000
+0034AAAA99770000000017679AAAA8781289AAAA77000000000
+003AAAB998770000000007777AAAA889888AAAA970000000000
+023BBBB9977000000000027778BBBB89A88AAAA730000000000
+028BBB9A885000000000008877BBBB9AA8BBBB8500000000000
+048BBBAA8400000000000008877AB9A9AABBBA1000820000000
+289BBA840000000000000000022332223222000000200000000
+000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000
+0000040000050F0000000000000000000000BF0000000000000
+00000CF000EF000000000000000000000000F00E00800000000
+00000C4000DF0F00FF0C6F0FF604FC09FF0FFFFFF1CA0000000
+00000C0F090F0F0F000C00F00A0F000500F0F00E00300000000
+00000C0A0F0F0F0F000C00F00400F28000F0F00E00000000000
+00000C00E00F0F0F000C00F00C000F0800D0F00F00000000000
+00000900C00B0C00DF09000DF10CF104FB00C00BE0000000000
+000000000000000000000000000000000000000000000000000
+000002330000000013100033333333003333333333320000000
+00000CFF700000004F5000FFFFFFFF00DFFFFFFFFFFA0000000
+00000CFFF00000004F5000FF0000000000000FF000000000000
+00000CF2FF0000004F5000FF0000000000000FF000000000000
+00000CF0FF3000004F5000FF0000000000000FF000000000000
+00000CF00FF000004F5000FF0000000000000FF000000000000
+00000CF005FE00004F5000FF0000000000000FF000000000000
+00000CF000FF10004F5000FF2222220000000FF000000000000
+00000CF0000FF0004F5000FFFFFFFF0000000FF000000000000
+00000CF00006FD004F5000FF0000000000000FF000000000000
+00000CF00000FF004F5000FF0000000000000FF000000000000
+00000CF000000FF04F5000FF0000000000000FF000000000000
+00000CF0000008FB4F5000FF0000000000000FF000000000000
+00000CF0000000FF3F5000FF0000000000000FF000000000000
+0F000CF00000000FFF5000FF0000000000000FF000000000000
+FFF00CF00000000AFF5000FFFFFFFFA000000FF000000000000
+2F0009C000000000CC3000CCCCCCCC7000000CC000000000000
+}
+
+sprite blazor <svg viewBox="0 0 24 24">
+<path fill="#555555" d="M23.8337 8.1013a13.9123 13.9123 0 0 1-13.6424 11.72 10.1053 10.1053 0 0 1-1.994-.121 6.111 6.111 0 0 1-5.0824-5.7607 5.9344 5.9344 0 0 1 11.867-.0838c.025.9835-.4011 1.8464-1.277 1.8713-.9356 0-1.3742-.6677-1.3742-1.5674v-2.5001a1.5313 1.5313 0 0 0-1.5196-1.5328H8.7152a3.6481 3.6481 0 1 0 2.6948 6.0794l.0733-.1093.0734.1213a2.5807 2.5807 0 0 0 2.2007 1.0479 2.9088 2.9088 0 0 0 2.6947-3.0406 7.912 7.912 0 0 0-.217-1.9324 7.4043 7.4043 0 0 0-14.6395 1.6033 7.4971 7.4971 0 0 0 7.307 7.4043s.549.05 1.1677.0357a15.8029 15.8029 0 0 0 8.4747-2.5283c.036-.025.0719.025.048.0614a12.4392 12.4392 0 0 1-9.6901 3.9625A8.7442 8.7442 0 0 1 .003 13.8603a9.049 9.049 0 0 1 3.6349-7.2471 8.8634 8.8634 0 0 1 5.229-1.7262h2.813a7.9145 7.9145 0 0 0 5.8386-2.5777.1093.1093 0 0 1 .0594-.034.1115.1115 0 0 1 .1195.0522.113.113 0 0 1 .0155.0672 7.9345 7.9345 0 0 1-1.2274 3.5493.1075.1075 0 0 0-.0132.0609.1098.1098 0 0 0 .0724.0945.109.109 0 0 0 .0619.0033 8.5054 8.5054 0 0 0 5.9134-4.876.1554.1554 0 0 1 .0546-.0527.1497.1497 0 0 1 .147 0 .1535.1535 0 0 1 .0546.0527 10.779 10.779 0 0 1 1.0575 6.8746zm-14.9383 3.527a2.188 2.188 0 1 0 2.1877 2.1878v-2.0425a.1577.1577 0 0 0-.1497-.1497Z"/>
+</svg>
+
+skinparam rectangle<<ui>> {
+    BackgroundColor cyan
+}
+skinparam database<<ui>> {
+    BackgroundColor cyan
+}
+skinparam queue<<ui>> {
+    BackgroundColor cyan
+}
+skinparam actor<<ui>> {
+    StereotypeFontColor cyan
+    FontColor cyan
+    BackgroundColor cyan
+}
+skinparam person<<ui>> {
+    BackgroundColor cyan
+}
+
+
+skinparam rectangle<<lib>> {
+    BackgroundColor silver
+}
+skinparam database<<lib>> {
+    BackgroundColor silver
+}
+skinparam queue<<lib>> {
+    BackgroundColor silver
+}
+skinparam actor<<lib>> {
+    StereotypeFontColor silver
+    FontColor silver
+    BackgroundColor silver
+}
+skinparam person<<lib>> {
+    BackgroundColor silver
+}
+
+
+skinparam rectangle<<test>> {
+    BackgroundColor #909090
+}
+skinparam database<<test>> {
+    BackgroundColor #909090
+}
+skinparam queue<<test>> {
+    BackgroundColor #909090
+}
+skinparam actor<<test>> {
+    StereotypeFontColor #909090
+    FontColor #909090
+    BackgroundColor #909090
+}
+skinparam person<<test>> {
+    BackgroundColor #909090
+}
+
+
+skinparam rectangle<<db>> {
+    BackgroundColor #909090
+}
+skinparam database<<db>> {
+    BackgroundColor #909090
+}
+skinparam queue<<db>> {
+    BackgroundColor #909090
+}
+skinparam actor<<db>> {
+    StereotypeFontColor #909090
+    FontColor #909090
+    BackgroundColor #909090
+}
+skinparam person<<db>> {
+    BackgroundColor #909090
+}
+
+
+skinparam rectangle<<api>> {
+    BackgroundColor #909090
+}
+skinparam database<<api>> {
+    BackgroundColor #909090
+}
+skinparam queue<<api>> {
+    BackgroundColor #909090
+}
+skinparam actor<<api>> {
+    StereotypeFontColor #909090
+    FontColor #909090
+    BackgroundColor #909090
+}
+skinparam person<<api>> {
+    BackgroundColor #909090
+}
+
+
+
+skinparam arrow<<authRel>> {
+    Color c0c0c0;text:c0c0c0
+}
+
+
+hide stereotype
+left to right direction
+
+rectangle "<$person>\n==User" <<person>> as user 
+  rectangle "==Headline System\n<size:12>[System]</size>" <<system_boundary>><<boundary>> as headline  {
+	rectangle "<$blazor>\n==Blazor Application\n//<size:12>[C#, .NET 6.0, MVVMLight, MudBlazor]</size>//\n\nAllows for displaying and maintaining headlines." <<ui>><<component>> as blazor 
+
+	rectangle "<$xamarin>\n==Xamarin Application\n//<size:12>[Xamarin Forms 5, .NET Standard 2.0, MVVMLight, SQLite, Xamarin.CommunityToolkit.Markup]</size>//\n\nAllows for displaying and maintaining headlines." <<ui>><<component>> as xam 
+	rectangle "<$android>\n==Xamarin Android" <<ui>><<component>> as xamAndroid 
+	rectangle "<$microsoft-windows>\n==Xamarin UWP" <<ui>><<component>> as xamWindows 
+
+	rectangle "<$dotnet>\n==Config\n//<size:12>[C#, .NET Standard 2.0]</size>//" <<lib>><<component>> as config 
+	rectangle "<$dotnet>\n==Models (DTOs)\n//<size:12>[C#, .NET Standard 2.0]</size>//" <<lib>><<component>> as models 
+
+	rectangle "<$dotnet>\n==API\n//<size:12>[C#, .NET Standard 2.0]</size>//" <<api>><<component>> as api 
+	database "<$sqlite>\n==Database\n//<size:12>[SQLite]</size>//" <<db>><<component>> as db 
+	rectangle "<$dotnet>\n==API Tests\n//<size:12>[C#, .NET 6.0]</size>//" <<test>><<component>> as apiTest 
+
+}
+rectangle "==Auth0" <<system>> as auth 
+
+blazor - ->> config : ** **
+blazor - ->> models : ** **
+blazor - ->> api : **https**
+
+models - ->> xam : ** **
+config - ->> xam : ** **
+api - ->> xam : **https**
+
+xam - ->> xamAndroid : ** **
+xam - ->> xamWindows : ** **
+
+api -RIGHT->> apiTest : ** **
+api - ->> db : **TCP**
+
+user - ->> auth <<authRel>> : **https**
+user - ->> xamAndroid <<authRel>> : **https**
+user - ->> xamWindows <<authRel>> : **https**
+user -LEFT->> blazor <<authRel>> : **https**
+
+auth - ->> xamAndroid <<authRel>> : **https**
+auth - ->> xamWindows <<authRel>> : **https**
+auth - ->> blazor <<authRel>> : **https**
+auth - ->> api <<authRel>> : **https**
+
+ @enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CAT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: ZA
+--></g></svg>

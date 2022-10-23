@@ -60,8 +60,8 @@
 
 ### Use-case diagram
 
-```plantuml usecases
-@startuml
+```plantuml
+@startuml usecases
 left to right direction
 
 actor User as u
@@ -107,7 +107,8 @@ active ..> patch
 
 @enduml
 ```
-![](diagrams/usecases.svg)
+
+![](diagrams/ReadMe/usecases.svg)
 
 ### Data Model
 
@@ -130,8 +131,8 @@ entity Headline {
 }
 @enduml
 ```
-![](diagrams/datamodel.svg)
 
+![](diagrams/ReadMe/datamodel.svg)
 
 ### System Context / Landscape
 
@@ -208,7 +209,8 @@ Rel(auth, api, "https", $tags="authRel")
 
  @enduml
 ```
-![](diagrams/landscape.svg)
+
+![](diagrams/ReadMe/landscape.svg)
 
 ## API Authorization
 
