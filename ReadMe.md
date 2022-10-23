@@ -108,6 +108,7 @@ active ..> patch
 
 @enduml
 ```
+<div hidden>
 
 ### Data Model
 
