@@ -112,7 +112,7 @@ active ..> patch
 ### Data Model
 
 ```plantuml
-@startuml
+@startuml datamodel
 ' hide the spot
 hide circle
 
@@ -130,12 +130,13 @@ entity Headline {
 }
 @enduml
 ```
+![](diagrams/datamodel.svg)
 
 
 ### System Context / Landscape
 
 ```plantuml
-@startuml
+@startuml landscape
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 !define SPRITESURL https://raw.githubusercontent.com/plantuml-stdlib/gilbarbara-plantuml-sprites/v1.0/sprites
 !includeurl SPRITESURL/xamarin.puml
@@ -207,6 +208,7 @@ Rel(auth, api, "https", $tags="authRel")
 
  @enduml
 ```
+![](diagrams/landscape.svg)
 
 ## API Authorization
 
