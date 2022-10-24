@@ -1,19 +1,33 @@
 ﻿@page "/headlinemaintenance"
 @inject HttpClient Http
 @using headline.ui.blazor.web.Shared
+@using static MudBlazor.CategoryTypes
+@inject ISnackbar Snackbar
+
+<style>
+    .colour-box {
+        float: left;
+        height: 10px;
+        width: 10px;
+        margin-top: 5px;
+        border: 1px solid black;
+        clear: both;
+    }
+</style>
+
 
 <PageTitle>Headlines</PageTitle>
 
 <MudText Typo="Typo.h3" GutterBottom="true">HEADLINES</MudText>
 <MudText Class="mb-8">Present and maintain headlines.</MudText>
 
-@if (headlines == null)
+@if (Headlines == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
-    <MudTable Items="headlines" Hover="true" SortLabel="Sort By" Elevation="0">
+    @*<MudTable Items="Headlines" Hover="true" SortLabel="Sort By" Elevation="0">
         <HeaderContent>
             <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Headline, object>(x=>x.Id)">Id</MudTableSortLabel></MudTh>
             <MudTh><MudTableSortLabel SortBy="new Func<Headline, object>(x=>x.Banner)">Headline</MudTableSortLabel></MudTh>
@@ -30,15 +44,134 @@ else
             <MudTd DataLabel="ImageUrl"><img width="25" alt="" src="@context.ImageUrl" /></MudTd>
             <MudTd DataLabel="Active"><input type="checkbox" @bind="@context.Active" /></MudTd>
         </RowTemplate>
+    </MudTable>*@
+
+    <MudTable Items="@Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true" Filter="new Func<Headline,bool>(FilterFunc)"
+          @bind-SelectedItem="selectedItem1" SortLabel="Sort By" CommitEditTooltip="Commit Edit"
+          OnCommitEditClick="@(() => Snackbar.Add("Commit Edit Handler Invoked"))" RowEditPreview="BackupItem" RowEditCancel="ResetItemToOriginalValues"
+          RowEditCommit="ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
+        <ColGroup>
+            <col style="width:50px;" />
+            <col style="width:350px;" />
+            <col style="width:100px;" />
+            <col style="width:100px;" />
+            <col style="width:300px;" />
+            <col style="width:50px;" />
+            <col style="width:50px;" />
+        </ColGroup>
+        <HeaderContent>
+            <MudTh>Id</MudTh>
+            <MudTh>Headline</MudTh>
+            <MudTh>Background</MudTh>
+            <MudTh>Foreground</MudTh>
+            <MudTh>Image Url</MudTh>
+            <MudTh>Active</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd Style="min-width: 50px;" DataLabel="Id">@context.Id</MudTd>
+            <MudTd Class="align-center" Style="min-width: 350px;" DataLabel="Headline">@context.Banner</MudTd>
+            <MudTd Style="min-width: 100px;" DataLabel="Background colour"><div class="colour-box" style="background-color: @context.BackgroundColour" />@context.BackgroundColour</MudTd>
+            <MudTd Style="min-width: 100px;" DataLabel="Foreground colour"><div class="colour-box" style="background-color: @context.ForegroundColour" />@context.ForegroundColour</MudTd>
+            <MudTd Style="min-width: 300px;" DataLabel="Image Url">
+                <img width="25" alt="" src="@context.ImageUrl" />
+                <br/>
+                @context.ImageUrl
+            </MudTd>
+            <MudTd Style="min-width: 50px;" DataLabel="Active"><MudCheckBox ReadOnly @bind-Checked="@context.Active" /></MudTd>
+        </RowTemplate>
+        <RowEditingTemplate>
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="Headline">
+                <MudTextField @bind-Value="@context.Banner" Required />
+            </MudTd>
+            <MudTd DataLabel="Background colour">
+                <MudColorPicker Label="" @bind-Text="context.BackgroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Style="@($"color: {context.BackgroundColour};")" Placeholder="Select Color" />
+            </MudTd>
+            <MudTd DataLabel="Foreground colour">
+                <MudColorPicker Label="" @bind-Text="context.ForegroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Style="@($"color: {context.ForegroundColour};")" Placeholder="Select Color" />
+            </MudTd>
+            <MudTd DataLabel="Image URL">
+                <MudNumericField @bind-Value="@context.ImageUrl" />
+            </MudTd>
+            <MudTd DataLabel="Active">
+                <MudCheckBox @bind-Checked="@context.Active" />
+            </MudTd>
+        </RowEditingTemplate>
+        <PagerContent>
+            <MudTablePager />
+        </PagerContent>
     </MudTable>
+
+    <MudText Inline="true">Selected1: @selectedItem1?.Id</MudText>
 }
 
 @code {
-    private Headline[]? headlines;
+    private List<string> editEvents = new();
+    private string searchString = "";
+    private Headline? selectedItem1;
+    private Headline? headlineBeforeEdit;
+    private HashSet<Headline> selectedItems1 = new HashSet<Headline>();
+    private IEnumerable<Headline> Headlines = new List<Headline>();
 
     protected override async Task OnInitializedAsync()
     {
-        headlines = await Http.GetFromJsonAsync<Headline[]>("sample-data/headlines.json");
+        Headlines = await Http.GetFromJsonAsync<List<Headline>>("sample-data/headlines.json");
+    }
+
+    private void ClearEventLog()
+    {
+        editEvents.Clear();
+    }
+
+    private void AddEditionEvent(string message)
+    {
+        editEvents.Add(message);
+        StateHasChanged();
+    }
+
+    private void BackupItem(object headline)
+    {
+        headlineBeforeEdit = new()
+            {
+                Id = ((Headline)headline).Id,
+                Banner = ((Headline)headline).Banner,
+                BackgroundColour = ((Headline)headline).BackgroundColour,
+                ForegroundColour = ((Headline)headline).ForegroundColour,
+                ImageUrl = ((Headline)headline).ImageUrl,
+                Active = ((Headline)headline).Active
+            };
+        AddEditionEvent($"RowEditPreview event: made a backup of Headline {((Headline)headline).Id}");
+    }
+
+    private void ItemHasBeenCommitted(object headline)
+    {
+        AddEditionEvent($"RowEditCommit event: Changes to Headline {((Headline)headline).Id} committed");
+    }
+
+    private void ResetItemToOriginalValues(object headline)
+    {
+        ((Headline)headline).Id = headlineBeforeEdit.Id;
+        ((Headline)headline).Banner = headlineBeforeEdit.Banner;
+        ((Headline)headline).BackgroundColour = headlineBeforeEdit.BackgroundColour;
+        ((Headline)headline).ForegroundColour = headlineBeforeEdit.ForegroundColour;
+        ((Headline)headline).ImageUrl = headlineBeforeEdit.ImageUrl;
+        ((Headline)headline).Active = headlineBeforeEdit.Active;
+        AddEditionEvent($"RowEditCancel event: Editing of Headline {((Headline)headline).Id} cancelled");
+    }
+
+    private bool FilterFunc(Headline headline)
+    {
+        if (string.IsNullOrWhiteSpace(searchString))
+            return true;
+        if (headline.Banner.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (headline.BackgroundColour.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (headline.ForegroundColour.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        if (headline.ImageUrl.Contains(searchString, StringComparison.OrdinalIgnoreCase))
+            return true;
+        return false;
     }
 
     public class Headline
