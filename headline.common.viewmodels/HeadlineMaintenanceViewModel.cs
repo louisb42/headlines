@@ -1,47 +1,34 @@
 ﻿using headline.common.Models;
-using headline.ui.blazor.web.Data;
-using Microsoft.JSInterop;
-using MvvmBlazor.ViewModel;
+using headline.common.viewmodels.Data;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace headline.ui.blazor.web.ViewModels
+namespace headline.common.ViewModels
 {
-    public class HeadlineMaintenanceViewModel : ViewModelBase, IHeadlineMaintenanceViewModel
+    public class HeadlineMaintenanceViewModel : IHeadlineMaintenanceViewModel
     {
-        public List<string> EditEvents { get; set; } = new();
-        public Headline? SelectedItem1 { get; set; }
         public Headline? HeadlineBeforeEdit { get; set; }
         public List<Headline> Headlines { get; set; } = new List<Headline>();
 
-        private readonly IJSInProcessRuntime _jsRuntime;
         private readonly IHeadlineData _headlineData;
-        public HeadlineMaintenanceViewModel(IJSInProcessRuntime jsRuntime, IHeadlineData headlineData)
+        public HeadlineMaintenanceViewModel(IHeadlineData headlineData)
         {
-            _jsRuntime = jsRuntime;
             _headlineData = headlineData;
             new Action(async () => Headlines = await _headlineData.GetDataAsync())();
         }
 
-        public override async Task OnInitializedAsync()
-        {
-
-            var forecastData = await _headlineData.GetDataAsync();
-        }
-
-
         public async Task AddEmptyHeadline()
         {
+            await Task.Delay(0); // Appease the compiler for now.
             int nextId = Headlines.OrderByDescending(h => h.Id).First().Id + 1;
             Headlines.Add(new Headline()
             {
                 Id = nextId
             });
-            await _jsRuntime.InvokeVoidAsync("window.scrollTo", 0, 1024);
-        }
-
-        public void ClearEventLog()
-        {
-            EditEvents.Clear();
+            //await _jsRuntime.InvokeVoidAsync("window.scrollTo", 0, 1024);
         }
 
         public void HandleEvent(Headline headline)
@@ -52,7 +39,7 @@ namespace headline.ui.blazor.web.ViewModels
 
         public void BackupItem(object headline)
         {
-            HeadlineBeforeEdit = new()
+            HeadlineBeforeEdit = new Headline()
             {
                 Id = ((Headline)headline).Id,
                 Banner = ((Headline)headline).Banner,

@@ -1,6 +1,8 @@
 ﻿using headline.common.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace headline.ui.blazor.web.Data
+namespace headline.common.viewmodels.Data
 {
     public interface IHeadlineData
     {

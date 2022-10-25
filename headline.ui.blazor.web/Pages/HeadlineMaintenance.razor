@@ -1,6 +1,6 @@
 ﻿@page "/headlinemaintenance"
 @using headline.ui.blazor.web.Shared
-@using headline.ui.blazor.web.ViewModels
+@using headline.common.ViewModels
 @using static MudBlazor.CategoryTypes
 @inject ISnackbar Snackbar
 @inject IJSRuntime JsRuntime
@@ -30,7 +30,7 @@
 else
 {   
     <MudTable Items="@HeadlineMaintenanceViewModel.Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
-          @bind-SelectedItem="HeadlineMaintenanceViewModel.SelectedItem1" SortLabel="Sort By" CommitEditTooltip="Commit Edit"
+          SortLabel="Sort By" CommitEditTooltip="Commit Edit"
           OnCommitEditClick="@(() => Snackbar.Add("Headline saved"))" RowEditPreview="HeadlineMaintenanceViewModel.BackupItem" RowEditCancel="HeadlineMaintenanceViewModel.ResetItemToOriginalValues"
           RowEditCommit="HeadlineMaintenanceViewModel.ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
         <ToolBarContent>
@@ -89,6 +89,4 @@ else
             <MudTablePager />
         </PagerContent>
     </MudTable>
-
-    <MudText Inline="true">Selected1: @HeadlineMaintenanceViewModel.SelectedItem1?.Id</MudText>
 }

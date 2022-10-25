@@ -1,16 +1,15 @@
 ﻿using headline.common.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace headline.ui.blazor.web.ViewModels
+namespace headline.common.ViewModels
 {
     public interface IHeadlineMaintenanceViewModel
     {
-        List<string> EditEvents { get; set; }
-        Headline? SelectedItem1 { get; set; }
         Headline? HeadlineBeforeEdit { get; set; }
         List<Headline> Headlines { get; set; }
 
         Task AddEmptyHeadline();
-        void ClearEventLog();
         void HandleEvent(Headline headline);
         void BackupItem(object headline);
         void ItemHasBeenCommitted(object headline);

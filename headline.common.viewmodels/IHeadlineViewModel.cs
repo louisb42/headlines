@@ -1,4 +1,4 @@
-﻿namespace headline.ui.blazor.web.ViewModels
+﻿namespace headline.common.ViewModels
 {
     public interface IHeadlineViewModel
     {

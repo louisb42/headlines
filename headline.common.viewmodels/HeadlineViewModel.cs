@@ -1,9 +1,8 @@
 ﻿using headline.common.Models;
-using MvvmBlazor.ViewModel;
 
-namespace headline.ui.blazor.web.ViewModels
+namespace headline.common.ViewModels
 {
-    public class HeadlineViewModel : ViewModelBase, IHeadlineViewModel
+    public class HeadlineViewModel : IHeadlineViewModel
     {
         private readonly Headline _headline;
 
