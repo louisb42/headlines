@@ -1,9 +1,10 @@
 ﻿@page "/headlinemaintenance"
-@inject HttpClient Http
 @using headline.ui.blazor.web.Shared
+@using headline.ui.blazor.web.ViewModels
 @using static MudBlazor.CategoryTypes
 @inject ISnackbar Snackbar
 @inject IJSRuntime JsRuntime
+@inject IHeadlineMaintenanceViewModel HeadlineMaintenanceViewModel;
 
 <style>
     .colour-box {
@@ -22,39 +23,20 @@
 <MudText Typo="Typo.h3" GutterBottom="true">HEADLINES</MudText>
 <MudText Class="mb-8">Present and maintain headlines.</MudText>
 
-@if (Headlines == null)
+@if (HeadlineMaintenanceViewModel.Headlines == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
-{
-    @*<MudTable Items="Headlines" Hover="true" SortLabel="Sort By" Elevation="0">
-        <HeaderContent>
-            <MudTh><MudTableSortLabel InitialDirection="SortDirection.Ascending" SortBy="new Func<Headline, object>(x=>x.Id)">Id</MudTableSortLabel></MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Headline, object>(x=>x.Banner)">Headline</MudTableSortLabel></MudTh>
-            <MudTh>Image</MudTh>
-            <MudTh><MudTableSortLabel SortBy="new Func<Headline, object>(x=>x.Active!)">Active</MudTableSortLabel></MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            <MudTd DataLabel="Id">@context.Id</MudTd>
-            <MudTd DataLabel="Banner. (C)">
-                <marquee bgcolor="@context.BackgroundColour" scrolldelay="100">
-                    <font size="5" face="Verdana" style="font-weight: bold" color="@context.ForegroundColour">@context.Banner</font>
-                </marquee>
-            </MudTd>
-            <MudTd DataLabel="ImageUrl"><img width="25" alt="" src="@context.ImageUrl" /></MudTd>
-            <MudTd DataLabel="Active"><input type="checkbox" @bind="@context.Active" /></MudTd>
-        </RowTemplate>
-    </MudTable>*@
-
-    <MudTable Items="@Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
-          @bind-SelectedItem="selectedItem1" SortLabel="Sort By" CommitEditTooltip="Commit Edit"
-          OnCommitEditClick="@(() => Snackbar.Add("Commit Edit Handler Invoked"))" RowEditPreview="BackupItem" RowEditCancel="ResetItemToOriginalValues"
-          RowEditCommit="ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
+{   
+    <MudTable Items="@HeadlineMaintenanceViewModel.Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
+          @bind-SelectedItem="HeadlineMaintenanceViewModel.SelectedItem1" SortLabel="Sort By" CommitEditTooltip="Commit Edit"
+          OnCommitEditClick="@(() => Snackbar.Add("Commit Edit Handler Invoked"))" RowEditPreview="HeadlineMaintenanceViewModel.BackupItem" RowEditCancel="HeadlineMaintenanceViewModel.ResetItemToOriginalValues"
+          RowEditCommit="HeadlineMaintenanceViewModel.ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
         <ToolBarContent>
             <MudText Typo="Typo.h6">Headlines</MudText>
             <MudSpacer />
-            <MudButton OnClick=@AddEmptyHeadline>Add</MudButton>
+            <MudButton OnClick=@HeadlineMaintenanceViewModel.AddEmptyHeadline>Add</MudButton>
         </ToolBarContent>
         <ColGroup>
             <col style="width:50px;" />
@@ -108,78 +90,5 @@ else
         </PagerContent>
     </MudTable>
 
-    <MudText Inline="true">Selected1: @selectedItem1?.Id</MudText>
-}
-
-@code {
-    private List<string> editEvents = new();
-    private Headline? selectedItem1;
-    private Headline? headlineBeforeEdit;
-    private HashSet<Headline> selectedItems1 = new HashSet<Headline>();
-    private List<Headline> Headlines = new List<Headline>();
-
-    protected override async Task OnInitializedAsync()
-    {
-        Headlines = await Http.GetFromJsonAsync<List<Headline>>("sample-data/headlines.json");
-    }
-
-    private void AddEmptyHeadline()
-    {
-        int nextId = Headlines.OrderByDescending(h => h.Id).First().Id + 1;
-        Headlines.Add(new Headline() {
-            Id = nextId
-        });
-        JsRuntime.InvokeVoidAsync("window.scrollTo", 0, 1024);
-    }
-
-    private void ClearEventLog()
-    {
-        editEvents.Clear();
-    }
-
-    private void AddEditionEvent(string message)
-    {
-        editEvents.Add(message);
-        StateHasChanged();
-    }
-
-    private void BackupItem(object headline)
-    {
-        headlineBeforeEdit = new()
-            {
-                Id = ((Headline)headline).Id,
-                Banner = ((Headline)headline).Banner,
-                BackgroundColour = ((Headline)headline).BackgroundColour,
-                ForegroundColour = ((Headline)headline).ForegroundColour,
-                ImageUrl = ((Headline)headline).ImageUrl,
-                Active = ((Headline)headline).Active
-            };
-        AddEditionEvent($"RowEditPreview event: made a backup of Headline {((Headline)headline).Id}");
-    }
-
-    private void ItemHasBeenCommitted(object headline)
-    {
-        AddEditionEvent($"RowEditCommit event: Changes to Headline {((Headline)headline).Id} committed");
-    }
-
-    private void ResetItemToOriginalValues(object headline)
-    {
-        ((Headline)headline).Id = headlineBeforeEdit.Id;
-        ((Headline)headline).Banner = headlineBeforeEdit.Banner;
-        ((Headline)headline).BackgroundColour = headlineBeforeEdit.BackgroundColour;
-        ((Headline)headline).ForegroundColour = headlineBeforeEdit.ForegroundColour;
-        ((Headline)headline).ImageUrl = headlineBeforeEdit.ImageUrl;
-        ((Headline)headline).Active = headlineBeforeEdit.Active;
-        AddEditionEvent($"RowEditCancel event: Editing of Headline {((Headline)headline).Id} cancelled");
-    }
-
-    public class Headline
-    {
-        public int Id { get; set; }
-        public string Banner { get; set; } = "";
-        public string BackgroundColour { get; set; } = "";
-        public string ForegroundColour { get; set; } = "";
-        public string? ImageUrl { get; set; }
-        public bool Active { get; set; } = true;
-    }
+    <MudText Inline="true">Selected1: @HeadlineMaintenanceViewModel.SelectedItem1?.Id</MudText>
 }
