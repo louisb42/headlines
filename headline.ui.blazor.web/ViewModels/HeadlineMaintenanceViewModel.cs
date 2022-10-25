@@ -1,36 +1,42 @@
 ﻿using headline.common.Models;
 using headline.ui.blazor.web.Data;
 using Microsoft.JSInterop;
-
+using MvvmBlazor.ViewModel;
+using System.Diagnostics;
 
 namespace headline.ui.blazor.web.ViewModels
 {
-    public class HeadlineMaintenanceViewModel : IHeadlineMaintenanceViewModel
+    public class HeadlineMaintenanceViewModel : ViewModelBase, IHeadlineMaintenanceViewModel
     {
         public List<string> EditEvents { get; set; } = new();
         public Headline? SelectedItem1 { get; set; }
         public Headline? HeadlineBeforeEdit { get; set; }
         public List<Headline> Headlines { get; set; } = new List<Headline>();
 
-        private HttpClient _client;
-        private IJSInProcessRuntime _jsRuntime;
-        private IHeadlineData _headlineData;
-        public HeadlineMaintenanceViewModel(HttpClient client, IJSInProcessRuntime jsRuntime, IHeadlineData headlineData)
+        private readonly IJSInProcessRuntime _jsRuntime;
+        private readonly IHeadlineData _headlineData;
+        public HeadlineMaintenanceViewModel(IJSInProcessRuntime jsRuntime, IHeadlineData headlineData)
         {
-            _client = client ?? throw new ArgumentNullException(nameof(client));
             _jsRuntime = jsRuntime;
             _headlineData = headlineData;
             new Action(async () => Headlines = await _headlineData.GetDataAsync())();
         }
 
-        public void AddEmptyHeadline()
+        public override async Task OnInitializedAsync()
+        {
+
+            var forecastData = await _headlineData.GetDataAsync();
+        }
+
+
+        public async Task AddEmptyHeadline()
         {
             int nextId = Headlines.OrderByDescending(h => h.Id).First().Id + 1;
             Headlines.Add(new Headline()
             {
                 Id = nextId
             });
-            _jsRuntime.InvokeVoidAsync("window.scrollTo", 0, 1024);
+            await _jsRuntime.InvokeVoidAsync("window.scrollTo", 0, 1024);
         }
 
         public void ClearEventLog()
@@ -38,9 +44,10 @@ namespace headline.ui.blazor.web.ViewModels
             EditEvents.Clear();
         }
 
-        public void AddEditionEvent(string message)
+        public void HandleEvent(Headline headline)
         {
-            EditEvents.Add(message);
+            Console.WriteLine(headline);
+            Debug.WriteLine(headline);
         }
 
         public void BackupItem(object headline)
@@ -54,23 +61,24 @@ namespace headline.ui.blazor.web.ViewModels
                 ImageUrl = ((Headline)headline).ImageUrl,
                 Active = ((Headline)headline).Active
             };
-            AddEditionEvent($"RowEditPreview event: made a backup of Headline {((Headline)headline).Id}");
         }
 
         public void ItemHasBeenCommitted(object headline)
         {
-            AddEditionEvent($"RowEditCommit event: Changes to Headline {((Headline)headline).Id} committed");
+            HandleEvent((Headline)headline);
         }
 
         public void ResetItemToOriginalValues(object headline)
         {
-            ((Headline)headline).Id = HeadlineBeforeEdit.Id;
-            ((Headline)headline).Banner = HeadlineBeforeEdit.Banner;
-            ((Headline)headline).BackgroundColour = HeadlineBeforeEdit.BackgroundColour;
-            ((Headline)headline).ForegroundColour = HeadlineBeforeEdit.ForegroundColour;
-            ((Headline)headline).ImageUrl = HeadlineBeforeEdit.ImageUrl;
-            ((Headline)headline).Active = HeadlineBeforeEdit.Active;
-            AddEditionEvent($"RowEditCancel event: Editing of Headline {((Headline)headline).Id} cancelled");
+            if (HeadlineBeforeEdit != null)
+            {
+                ((Headline)headline).Id = HeadlineBeforeEdit.Id;
+                ((Headline)headline).Banner = HeadlineBeforeEdit.Banner;
+                ((Headline)headline).BackgroundColour = HeadlineBeforeEdit.BackgroundColour;
+                ((Headline)headline).ForegroundColour = HeadlineBeforeEdit.ForegroundColour;
+                ((Headline)headline).ImageUrl = HeadlineBeforeEdit.ImageUrl;
+                ((Headline)headline).Active = HeadlineBeforeEdit.Active;
+            }
         }
     }
 }

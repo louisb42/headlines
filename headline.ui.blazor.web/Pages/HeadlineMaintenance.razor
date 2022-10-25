@@ -31,7 +31,7 @@ else
 {   
     <MudTable Items="@HeadlineMaintenanceViewModel.Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
           @bind-SelectedItem="HeadlineMaintenanceViewModel.SelectedItem1" SortLabel="Sort By" CommitEditTooltip="Commit Edit"
-          OnCommitEditClick="@(() => Snackbar.Add("Commit Edit Handler Invoked"))" RowEditPreview="HeadlineMaintenanceViewModel.BackupItem" RowEditCancel="HeadlineMaintenanceViewModel.ResetItemToOriginalValues"
+          OnCommitEditClick="@(() => Snackbar.Add("Headline saved"))" RowEditPreview="HeadlineMaintenanceViewModel.BackupItem" RowEditCancel="HeadlineMaintenanceViewModel.ResetItemToOriginalValues"
           RowEditCommit="HeadlineMaintenanceViewModel.ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
         <ToolBarContent>
             <MudText Typo="Typo.h6">Headlines</MudText>
@@ -57,13 +57,13 @@ else
         </HeaderContent>
         <RowTemplate>
             <MudTd Style="min-width: 50px;" DataLabel="Id">@context.Id</MudTd>
-            <MudTd Class="align-center" Style="min-width: 350px;" DataLabel="Headline">@context.Banner</MudTd>
+            <MudTd Class="align-center" Style="min-width: 350px;" DataLabel="Headline">@context?.Banner</MudTd>
             <MudTd Style="min-width: 100px;" DataLabel="Background colour"><div class="colour-box" style="background-color: @context.BackgroundColour" />@context.BackgroundColour</MudTd>
             <MudTd Style="min-width: 100px;" DataLabel="Foreground colour"><div class="colour-box" style="background-color: @context.ForegroundColour" />@context.ForegroundColour</MudTd>
             <MudTd Style="min-width: 300px;" DataLabel="Image Url">
-                <img width="25" alt="" src="@context.ImageUrl" />
+                <img width="25" alt="" src="@context?.ImageUrl" />
                 <br />
-                @context.ImageUrl
+                @context?.ImageUrl
             </MudTd>
             <MudTd Style="min-width: 50px;" DataLabel="Active"><MudCheckBox ReadOnly @bind-Checked="@context.Active" /></MudTd>
         </RowTemplate>
@@ -73,10 +73,10 @@ else
                 <MudTextField @bind-Value="@context.Banner" Required MaxLength="200" Placeholder="Enter headline"/>
             </MudTd>
             <MudTd DataLabel="Background colour">
-                <MudColorPicker Label="" @bind-Text="context.BackgroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Style="@($"color: {context.BackgroundColour};")" Required Placeholder="Select Color" />
+                <MudColorPicker Label="" @bind-Text="context.BackgroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Placeholder="Select Colour" />
             </MudTd>
             <MudTd DataLabel="Foreground colour">
-                <MudColorPicker Label="" @bind-Text="context.ForegroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Style="@($"color: {context.ForegroundColour};")" Required Placeholder="Select Color" />
+                <MudColorPicker Label="" @bind-Text="context.ForegroundColour" DisableToolbar="false" PickerVariant="PickerVariant.Dialog" Placeholder="Select Colour" />
             </MudTd>
             <MudTd DataLabel="Image URL">
                 <MudNumericField @bind-Value="@context.ImageUrl" />

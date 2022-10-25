@@ -9,9 +9,9 @@ namespace headline.ui.blazor.web.ViewModels
         Headline? HeadlineBeforeEdit { get; set; }
         List<Headline> Headlines { get; set; }
 
-        void AddEmptyHeadline();
+        Task AddEmptyHeadline();
         void ClearEventLog();
-        void AddEditionEvent(string message);
+        void HandleEvent(Headline headline);
         void BackupItem(object headline);
         void ItemHasBeenCommitted(object headline);
         void ResetItemToOriginalValues(object headline);
