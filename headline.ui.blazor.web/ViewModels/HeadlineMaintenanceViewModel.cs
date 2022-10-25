@@ -1,6 +1,6 @@
-﻿using headline.ui.blazor.web.Models;
+﻿using headline.ui.blazor.web.Data;
+using headline.ui.blazor.web.Models;
 using Microsoft.JSInterop;
-using System.Net.Http.Json;
 
 
 namespace headline.ui.blazor.web.ViewModels
@@ -14,15 +14,13 @@ namespace headline.ui.blazor.web.ViewModels
 
         private HttpClient _client;
         private IJSInProcessRuntime _jsRuntime;
-        public HeadlineMaintenanceViewModel(HttpClient client, IJSInProcessRuntime jsRuntime)
+        private IHeadlineData _headlineData;
+        public HeadlineMaintenanceViewModel(HttpClient client, IJSInProcessRuntime jsRuntime, IHeadlineData headlineData)
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
             _jsRuntime = jsRuntime;
-        }
-
-        public async Task OnInitializedAsync()
-        {
-            Headlines = await _client.GetFromJsonAsync<List<Headline>>("sample-data/headlines.json");
+            _headlineData = headlineData;
+            new Action(async () => Headlines = await _headlineData.GetDataAsync())();
         }
 
         public void AddEmptyHeadline()
