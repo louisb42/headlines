@@ -1,5 +1,5 @@
-﻿using headline.ui.blazor.web.Data;
-using headline.ui.blazor.web.Models;
+﻿using headline.common.Models;
+using headline.ui.blazor.web.Data;
 using Microsoft.JSInterop;
 
 

@@ -1,4 +1,4 @@
-﻿using headline.ui.blazor.web.Models;
+﻿using headline.common.Models;
 
 namespace headline.ui.blazor.web.Data
 {

@@ -18,6 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\headline.common.models\headline.common.models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\headlines.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
