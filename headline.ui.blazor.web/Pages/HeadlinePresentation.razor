@@ -1,0 +1,65 @@
+﻿@page "/"
+@page "/headlinepresentation"
+@using headline.common.ViewModels
+@using headline.ui.blazor.web.Shared
+@inject IHeadlinePresentationViewModel HeadlinePresentationViewModel
+
+<style>
+    .mCarousel {
+        position: relative;
+        min-height: 90vh;
+    }
+
+    .mContainer {
+        position: relative;
+        min-height: 90vh;
+    }
+
+    .mCard {
+        position: relative;
+        min-height: 90vh;
+    }
+
+    .mCardMedia {
+        min-width: 100px;
+        max-width: 500px;
+        min-height: 100px;
+        max-height: 500px;
+        text-align: left;
+    }
+
+    .mText {
+    }
+
+    .mCardContent {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+    }
+</style>
+
+@if (HeadlinePresentationViewModel.Headlines == null)
+{
+    <MudProgressCircular Color="Color.Default" Indeterminate="true" />
+}
+else
+{
+
+    <MudCarousel Class="mCarousel" ItemsSource="@HeadlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@HeadlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@Headline">
+        <ItemTemplate>
+            <MudContainer Class="mContainer">
+                <MudCard Class="mCard" style="@context.BackgroundColour">
+                    <MudCardMedia Class="mCardMedia" Image="@context.ImageUrl" />
+                    <MudCardContent Class="mCardContent">
+                        <MudText Class="mText" Typo="Typo.h5">
+                            <marquee scrollamount="20" style="color: @context.ForegroundColour">@context.Banner</marquee>
+                        </MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudContainer>
+        </ItemTemplate>
+    </MudCarousel>
+
+}
+
