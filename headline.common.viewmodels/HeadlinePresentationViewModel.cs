@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 using Headline.Common.Models;
 using Headline.Common.ViewModels.Data;
+
+using Microsoft.VisualStudio.Threading;
 
 namespace Headline.Common.ViewModels
 {
@@ -13,17 +16,20 @@ namespace Headline.Common.ViewModels
         public TimeSpan CycleTime { get; set; } = TimeSpan.FromSeconds(7);
 
         private readonly IHeadlineData _headlineData;
+
+        private AsyncEventHandler _asyncEventHandler;
         public HeadlinePresentationViewModel(IHeadlineData headlineData)
         {
             _headlineData = headlineData;
-            LoadData();
+
+            _asyncEventHandler += LoadDataAsync;
+
+            Debug.WriteLine("Async invoke incoming!");
+            _asyncEventHandler.InvokeAsync(this, EventArgs.Empty);
+            Debug.WriteLine("Done.");
         }
 
-        /// <summary>
-        /// Load all data from the business logic.
-        /// </summary>
-        /// <returns>Task</returns>
-        private async Task LoadData()
+        private async Task LoadDataAsync(object sender, EventArgs args)
         {
             try
             {

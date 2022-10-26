@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 using Headline.Common.Models;
 
+using Microsoft.VisualStudio.Threading;
+
 namespace Headline.Common.ViewModels.Data
 {
     public class HeadlineData : IHeadlineData
@@ -13,6 +15,10 @@ namespace Headline.Common.ViewModels.Data
         private const string ApiKeyName = "XApiKey";
         private const string ApiKeyValue = "This-should-be-in-a-vault-because-it-is-Super-secret-like-the-location-of-the-batcave-in-Bronson-Caves-in-Griffith-Park-below-the-Hollywood-Sign";
         private const string ApiBaseUrl = "https://localhost:7011";
+
+        public HeadlineData()
+        {
+        }
 
         public async Task<List<HeadlineModel>> GetDataAsync()
         {
