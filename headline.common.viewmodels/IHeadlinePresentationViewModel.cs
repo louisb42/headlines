@@ -1,6 +1,7 @@
-﻿using Headline.Common.Models;
 using System;
 using System.Collections.Generic;
+
+using Headline.Common.Models;
 
 namespace Headline.Common.ViewModels
 {

@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Threading;
 using System.Threading.Tasks;
 
 using Headline.Common.Models;
@@ -18,50 +16,31 @@ namespace Headline.Common.ViewModels
         public HeadlinePresentationViewModel(IHeadlineData headlineData)
         {
             _headlineData = headlineData;
-            List<HeadlineModel> result = Run.Sync(() => _headlineData.GetDataAsync());
-            // #hack for now. Fix using an intermediate view-model
-            foreach (HeadlineModel headline in result)
+            LoadData();
+        }
+
+        /// <summary>
+        /// Load all data from the business logic.
+        /// </summary>
+        /// <returns>Task</returns>
+        private async Task LoadData()
+        {
+            try
             {
-                headline.BackgroundColour = $"background-color: {headline.BackgroundColour}";
+                List<HeadlineModel> result = _headlineData.GetDataAsync().Result;
+                // #hack for now. Fix using an intermediate view-model
+                foreach (HeadlineModel headline in result)
+                {
+                    headline.BackgroundColour = $"background-color: {headline.BackgroundColour}";
+                }
+                Headlines = result;
             }
-            Headlines = result;
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
     }
 
-    public static class Run
-    {
-        private static bool IsDotNetFx =>
-            RuntimeInformation.FrameworkDescription.StartsWith(".NET Framework", StringComparison.OrdinalIgnoreCase);
-
-        private static readonly TaskFactory factory =
-            new TaskFactory(
-                CancellationToken.None,
-                TaskCreationOptions.None,
-                TaskContinuationOptions.None,
-                TaskScheduler.Default);
-
-        public static TResult Sync<TResult>(Func<Task<TResult>> func)
-        {
-            if (IsDotNetFx)
-            {
-                return factory.StartNew(func).Unwrap().GetAwaiter().GetResult();
-            }
-            else
-            {
-                return func().GetAwaiter().GetResult();
-            }
-        }
-
-        public static void Sync(Func<Task> func)
-        {
-            if (IsDotNetFx)
-            {
-                factory.StartNew(func).Unwrap().GetAwaiter().GetResult();
-            }
-            else
-            {
-                func().GetAwaiter().GetResult();
-            }
-        }
-    }
 }
