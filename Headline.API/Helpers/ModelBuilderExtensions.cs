@@ -1,4 +1,5 @@
-﻿using Headline.Common.Models;
+using Headline.Common.Models;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Headline.API.Helpers
@@ -16,7 +17,8 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#000000",
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Will_Ferrell_2012.jpg/330px-Will_Ferrell_2012.jpg",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 2,
@@ -25,7 +27,8 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#ffffff",
                     ImageUrl = "https://www.magicalquote.com/wp-content/uploads/2015/03/Sheldon-Cooper.jpg",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 3,
@@ -34,7 +37,8 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#000000",
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/330px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 4,
@@ -42,7 +46,8 @@ namespace Headline.API.Helpers
                     BackgroundColour = "#aa0000",
                     ForegroundColour = "#000000",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 5,
@@ -51,7 +56,8 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#000000",
                     ImageUrl = "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/07/06/thumbs/800x531/44741.jpg?v=1594038512",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 6,
@@ -59,10 +65,11 @@ namespace Headline.API.Helpers
                     BackgroundColour = "#00aa00",
                     ForegroundColour = "#000000",
                     Active = true
-                },
+                });
+            modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
-                    Id = 6,
+                    Id = 7,
                     Banner = "He’s the hero Gotham deserves, but not the one it needs right now. So we’ll hunt him...Because he can take it...Because he’s not our hero. He’s a silent guardian, a watchful protector. A dark knight.",
                     BackgroundColour = "#00aa00",
                     ForegroundColour = "#000000",

@@ -1,10 +1,12 @@
-﻿using Headline.Common.Models;
+using Headline.Common.Models;
+
 using Microsoft.EntityFrameworkCore;
 
 namespace Headline.API.Helpers
 {
     public class DataContext : DbContext
     {
+
         protected readonly IConfiguration Configuration;
 
         public DataContext(IConfiguration configuration)

@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+using AutoMapper;
+
 using Headline.API.Helpers;
 using Headline.API.RequestModels;
 using Headline.Common.Models;
@@ -19,12 +20,12 @@ namespace Headline.API.Services
         private DataContext _context;
         private readonly IMapper _mapper;
 
-        public HeadlineService(
-            DataContext context,
-            IMapper mapper)
+        public HeadlineService(DataContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
+            context.Database.EnsureCreated();
+
         }
 
         public List<HeadlineModel> GetAll()
@@ -63,7 +64,8 @@ namespace Headline.API.Services
         private HeadlineModel GetHeadline(int id)
         {
             var user = _context.Headlines.Find(id);
-            if (user == null) throw new KeyNotFoundException("Headline not found");
+            if (user == null)
+                throw new KeyNotFoundException("Headline not found");
             return user;
         }
     }

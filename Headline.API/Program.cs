@@ -1,7 +1,9 @@
+using System.Text.Json.Serialization;
+
 using Headline.API.Helpers;
 using Headline.API.Services;
+
 using Microsoft.OpenApi.Models;
-using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,7 +48,7 @@ builder.Services.AddSwaggerGen(c =>
     c.AddSecurityRequirement(requirement);
 });
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
