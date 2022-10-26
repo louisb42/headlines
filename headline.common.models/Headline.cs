@@ -1,8 +1,8 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace headline.common.Models
+namespace Headline.Common.Models
 {
-    public class Headline
+    public class HeadlineModel
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }

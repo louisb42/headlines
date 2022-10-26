@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\headline.common.models\headline.common.models.csproj" />
-    <ProjectReference Include="..\headline.common.viewmodels\headline.common.viewmodels.csproj" />
+    <ProjectReference Include="..\Headline.Common.Models\Headline.Common.Models.csproj" />
+    <ProjectReference Include="..\Headline.Common.ViewModels\Headline.Common.ViewModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>

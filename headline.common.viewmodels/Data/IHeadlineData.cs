@@ -1,11 +1,11 @@
-﻿using headline.common.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Headline.Common.Models;
 
-namespace headline.common.viewmodels.Data
+namespace Headline.Common.ViewModels.Data
 {
     public interface IHeadlineData
     {
-        Task<List<Headline>> GetDataAsync();
+        Task<List<HeadlineModel>> GetDataAsync();
     }
 }

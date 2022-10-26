@@ -1,13 +1,13 @@
-﻿using headline.common.Models;
-using headline.common.viewmodels.Data;
+﻿using Headline.Common.Models;
+using Headline.Common.ViewModels.Data;
 using System;
 using System.Collections.Generic;
 
-namespace headline.common.ViewModels
+namespace Headline.Common.ViewModels
 {
     public class HeadlinePresentationViewModel : IHeadlinePresentationViewModel
     {
-        public List<Headline> Headlines { get; set; } = new List<Headline>();
+        public List<HeadlineModel> Headlines { get; set; } = new List<HeadlineModel>();
         public TimeSpan CycleTime { get; set; } = TimeSpan.FromSeconds(7);
 
         private readonly IHeadlineData _headlineData;

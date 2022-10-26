@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "headline.ui.blazor.web", "headline.ui.blazor.web\headline.ui.blazor.web.csproj", "{9392DEF2-040E-48E9-A693-B4E217BD41C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Headline.UI.Blazor.Web", "Headline.UI.Blazor.Web\Headline.UI.Blazor.Web.csproj", "{9392DEF2-040E-48E9-A693-B4E217BD41C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE1996E0-3037-4495-852F-EBA6689963AB}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		ReadMe.md = ReadMe.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "headline.common.models", "headline.common.models\headline.common.models.csproj", "{F2547449-69CC-4217-BA43-DA42FE64A278}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Headline.Common.Models", "Headline.Common.Models\Headline.Common.Models.csproj", "{F2547449-69CC-4217-BA43-DA42FE64A278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "headline.common.viewmodels", "headline.common.viewmodels\headline.common.viewmodels.csproj", "{12A2BE23-504B-4E5B-9C95-F455A8C10AA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Headline.Common.ViewModels", "Headline.Common.ViewModels\Headline.Common.ViewModels.csproj", "{12A2BE23-504B-4E5B-9C95-F455A8C10AA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

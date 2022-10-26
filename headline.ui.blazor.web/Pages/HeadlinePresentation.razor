@@ -1,7 +1,7 @@
 ﻿@page "/"
 @page "/headlinepresentation"
-@using headline.common.ViewModels
-@using headline.ui.blazor.web.Shared
+@using Headline.Common.ViewModels
+@using Headline.UI.Blazor.Web.Shared
 @inject IHeadlinePresentationViewModel HeadlinePresentationViewModel
 
 <style>
@@ -46,7 +46,7 @@
 else
 {
 
-    <MudCarousel Class="mCarousel" ItemsSource="@HeadlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@HeadlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@Headline">
+    <MudCarousel Class="mCarousel" ItemsSource="@HeadlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@HeadlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@HeadlineModel">
         <ItemTemplate>
             <MudContainer Class="mContainer">
                 <MudCard Class="mCard" style="@context.BackgroundColour">

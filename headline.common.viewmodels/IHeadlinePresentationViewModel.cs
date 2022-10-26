@@ -1,12 +1,12 @@
-﻿using headline.common.Models;
+﻿using Headline.Common.Models;
 using System;
 using System.Collections.Generic;
 
-namespace headline.common.ViewModels
+namespace Headline.Common.ViewModels
 {
     public interface IHeadlinePresentationViewModel
     {
-        List<Headline> Headlines { get; set; }
+        List<HeadlineModel> Headlines { get; set; }
         TimeSpan CycleTime { get; set; }
     }
 }

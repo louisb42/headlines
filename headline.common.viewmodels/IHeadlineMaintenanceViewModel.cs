@@ -1,16 +1,16 @@
-﻿using headline.common.Models;
+﻿using Headline.Common.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace headline.common.ViewModels
+namespace Headline.Common.ViewModels
 {
     public interface IHeadlineMaintenanceViewModel
     {
-        Headline? HeadlineBeforeEdit { get; set; }
-        List<Headline> Headlines { get; set; }
+        HeadlineModel? HeadlineBeforeEdit { get; set; }
+        List<HeadlineModel> Headlines { get; set; }
 
         Task AddEmptyHeadline();
-        void HandleEvent(Headline headline);
+        void HandleEvent(HeadlineModel headline);
         void BackupItem(object headline);
         void ItemHasBeenCommitted(object headline);
         void ResetItemToOriginalValues(object headline);

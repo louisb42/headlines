@@ -1,8 +1,8 @@
-﻿using headline.common.viewmodels.Data;
-using headline.common.ViewModels;
+﻿using Headline.Common.ViewModels.Data;
+using Headline.Common.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace headline.common.viewmodels
+namespace Headline.Common.ViewModels
 {
     public static class ServiceCollectionExtensions
     {

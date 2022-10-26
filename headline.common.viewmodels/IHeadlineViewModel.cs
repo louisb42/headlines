@@ -1,4 +1,4 @@
-﻿namespace headline.common.ViewModels
+﻿namespace Headline.Common.ViewModels
 {
     public interface IHeadlineViewModel
     {

@@ -17,7 +17,7 @@
       "args": [
         "watch",
         "--project",
-        "headline.ui.blazor.web",
+        "Headline.UI.Blazor.Web",
         "--verbose" // Let's us confirm browser connects with hot reload capabilities
       ],
       "preLaunchTask": "build" // Ensure we don't watch an unbuilt site
