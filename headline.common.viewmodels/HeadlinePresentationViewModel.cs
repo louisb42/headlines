@@ -1,7 +1,11 @@
-﻿using Headline.Common.Models;
-using Headline.Common.ViewModels.Data;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks;
+
+using Headline.Common.Models;
+using Headline.Common.ViewModels.Data;
 
 namespace Headline.Common.ViewModels
 {
@@ -14,11 +18,49 @@ namespace Headline.Common.ViewModels
         public HeadlinePresentationViewModel(IHeadlineData headlineData)
         {
             _headlineData = headlineData;
-            new Action(async () => Headlines = await _headlineData.GetDataAsync())();
+            List<HeadlineModel> result = Run.Sync(() => _headlineData.GetDataAsync());
             // #hack for now. Fix using an intermediate view-model
-            foreach (var headline in Headlines)
+            foreach (HeadlineModel headline in result)
             {
                 headline.BackgroundColour = $"background-color: {headline.BackgroundColour}";
+            }
+            Headlines = result;
+        }
+    }
+
+    public static class Run
+    {
+        private static bool IsDotNetFx =>
+            RuntimeInformation.FrameworkDescription.StartsWith(".NET Framework", StringComparison.OrdinalIgnoreCase);
+
+        private static readonly TaskFactory factory =
+            new TaskFactory(
+                CancellationToken.None,
+                TaskCreationOptions.None,
+                TaskContinuationOptions.None,
+                TaskScheduler.Default);
+
+        public static TResult Sync<TResult>(Func<Task<TResult>> func)
+        {
+            if (IsDotNetFx)
+            {
+                return factory.StartNew(func).Unwrap().GetAwaiter().GetResult();
+            }
+            else
+            {
+                return func().GetAwaiter().GetResult();
+            }
+        }
+
+        public static void Sync(Func<Task> func)
+        {
+            if (IsDotNetFx)
+            {
+                factory.StartNew(func).Unwrap().GetAwaiter().GetResult();
+            }
+            else
+            {
+                func().GetAwaiter().GetResult();
             }
         }
     }
