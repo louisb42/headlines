@@ -2,6 +2,38 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Headline.API (console)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Headline.API/bin/Debug/net6.0/Headline.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "https://localhost:7011/"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      },
+      "launchBrowser": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "Headline.API with Swagger in Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "https://localhost:7011/swagger/index.html",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
       "name": "Launch and Debug Standalone Blazor WebAssembly App",
       "type": "blazorwasm",
       "request": "launch",
@@ -9,7 +41,7 @@
       "url": "https://localhost:5001" // Tell launch where to find site
     },
     {
-      "name": "Watch",
+      "name": "Blazor Watch",
       "type": "coreclr",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -23,7 +55,7 @@
       "preLaunchTask": "build" // Ensure we don't watch an unbuilt site
     },
     {
-      "name": "Attach",
+      "name": "Blazor Attach",
       "type": "blazorwasm",
       "request": "attach",
       "cwd": "${workspaceFolder}",
@@ -33,8 +65,24 @@
   ],
   "compounds": [
     {
-      "name": "Debug with Hot Reload",
-      "configurations": ["Watch", "Attach"]
+      "name": "Debug Blazor with Hot Reload",
+      "configurations": ["Blazor Watch", "Blazor Attach"]
+    },
+    {
+      "name": "Debug API with swagger",
+      "configurations": [
+        "Headline.API (console)",
+        "Headline.API with Swagger in Chrome"
+      ]
+    },
+    {
+      "name": "Debug Blazor and API",
+      "configurations": [
+        "Headline.API (console)",
+        "Headline.API with Swagger in Chrome",
+        "Blazor Watch",
+        "Blazor Attach"
+      ]
     }
   ]
 }
