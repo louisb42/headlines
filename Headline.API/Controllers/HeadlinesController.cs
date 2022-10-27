@@ -21,37 +21,37 @@ namespace Headline.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAllAsync()
         {
-            List<Common.Models.HeadlineModel> headlines = _headlineService.GetAll();
+            List<Common.Models.HeadlineModel> headlines = await _headlineService.GetAllAsync();
             return Ok(headlines);
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetByIdAsync(int id)
         {
-            Common.Models.HeadlineModel headline = _headlineService.GetById(id);
+            Common.Models.HeadlineModel headline = await _headlineService.GetByIdAsync(id);
             return Ok(headline);
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateHeadlineRequest model)
+        public async Task<IActionResult> CreateAsync([FromBody] CreateHeadlineRequest model)
         {
-            _headlineService.Create(model);
+            await _headlineService.CreateAsync(model);
             return Ok(new { message = "Headline created" });
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] UpdateHeadlineRequest model)
+        public async Task<IActionResult> UpdateAsync(int id, [FromBody] UpdateHeadlineRequest model)
         {
-            _headlineService.Update(id, model);
+            await _headlineService.UpdateAsync(id, model);
             return Ok(new { message = "Headline updated" });
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> DeleteAsync(int id)
         {
-            _headlineService.Delete(id);
+            await _headlineService.DeleteAsync(id);
             return Ok(new { message = "Headline deleted" });
         }
     }

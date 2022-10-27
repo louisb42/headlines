@@ -179,3 +179,6 @@ dotnet_naming_rule.everything_else_naming.symbols = everything_else
 dotnet_naming_rule.everything_else_naming.style = camel_case_style
 dotnet_naming_symbols.everything_else.applicable_kinds = *
 dotnet_naming_symbols.everything_else.applicable_accessibilities = *
+
+# CS8601: Possible null reference assignment.
+dotnet_diagnostic.CS8601.severity = none

@@ -4,15 +4,17 @@ using Headline.API.Helpers;
 using Headline.API.RequestModels;
 using Headline.Common.Models;
 
+using Microsoft.EntityFrameworkCore;
+
 namespace Headline.API.Services
 {
     public interface IHeadlineService
     {
-        List<HeadlineModel> GetAll();
-        HeadlineModel GetById(int id);
-        void Create(CreateHeadlineRequest model);
-        void Update(int id, UpdateHeadlineRequest model);
-        void Delete(int id);
+        Task<List<HeadlineModel>> GetAllAsync();
+        Task<HeadlineModel> GetByIdAsync(int id);
+        Task<int> CreateAsync(CreateHeadlineRequest model);
+        Task UpdateAsync(int id, UpdateHeadlineRequest model);
+        Task DeleteAsync(int id);
     }
 
     public class HeadlineService : IHeadlineService
@@ -28,44 +30,43 @@ namespace Headline.API.Services
 
         }
 
-        public List<HeadlineModel> GetAll()
-            => _context.Headlines.ToList();
+        public async Task<List<HeadlineModel>> GetAllAsync()
+            => await _context.Headlines.ToListAsync();
 
-        public HeadlineModel GetById(int id)
-            => GetHeadline(id);
+        public async Task<HeadlineModel> GetByIdAsync(int id)
+            => await GetHeadlineAsync(id);
 
 
-        public void Create(CreateHeadlineRequest model)
+        public async Task<int> CreateAsync(CreateHeadlineRequest model)
         {
             HeadlineModel headline = _mapper.Map<HeadlineModel>(model);
             var lastId = _context.Headlines.OrderBy(x => x.Id).Last().Id;
             headline.Id = lastId + 1;
-            _context.Headlines.Add(headline);
-            _context.SaveChanges();
+            await _context.Headlines.AddAsync(headline);
+            await _context.SaveChangesAsync();
+            return lastId + 1;
         }
 
-        public void Update(int id, UpdateHeadlineRequest model)
+        public async Task UpdateAsync(int id, UpdateHeadlineRequest model)
         {
-            HeadlineModel headline = GetHeadline(id);
+            HeadlineModel headline = await GetHeadlineAsync(id);
             _mapper.Map(model, headline);
             _context.Headlines.Update(headline);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
+        public async Task DeleteAsync(int id)
         {
-            HeadlineModel headline = GetHeadline(id);
+            HeadlineModel headline = await GetHeadlineAsync(id);
             _context.Headlines.Remove(headline);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         // helper methods
-        private HeadlineModel GetHeadline(int id)
+        private async Task<HeadlineModel> GetHeadlineAsync(int id)
         {
-            HeadlineModel? user = _context.Headlines.Find(id);
-            if (user == null)
-                throw new KeyNotFoundException("Headline not found");
-            return user;
+            HeadlineModel? user = await _context.Headlines.FindAsync(id);
+            return user ?? throw new KeyNotFoundException("Headline not found");
         }
     }
 }
