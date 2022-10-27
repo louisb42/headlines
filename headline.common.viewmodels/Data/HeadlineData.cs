@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -44,7 +45,49 @@ namespace Headline.Common.ViewModels.Data
             }
         }
 
-        public Task PostDataAsync() => throw new NotImplementedException();
-        public Task PutDataAsync() => throw new NotImplementedException();
+        public async Task PostDataAsync(HeadlineModel headline)
+        {
+            var url = "/headlines/";
+            try
+            {
+                using var client = new HttpClient();
+                client.BaseAddress = new Uri(ApiBaseUrl);
+                client.DefaultRequestHeaders.Add(ApiKeyName, ApiKeyValue);
+
+                HttpContent c = new StringContent(JsonSerializer.Serialize(headline), Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PostAsync(url, c);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        public async Task PutDataAsync(HeadlineModel headline)
+        {
+            var url = $"/headlines/{headline.Id}";
+            try
+            {
+                using var client = new HttpClient();
+                client.BaseAddress = new Uri(ApiBaseUrl);
+                client.DefaultRequestHeaders.Add(ApiKeyName, ApiKeyValue);
+
+                HttpContent c = new StringContent(JsonSerializer.Serialize(headline), Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PutAsync(url, c);
+                response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
     }
 }

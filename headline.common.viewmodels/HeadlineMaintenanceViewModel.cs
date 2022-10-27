@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 using Headline.Common.Models;
 using Headline.Common.ViewModels.Data;
-using Headline.Common.ViewModels.Helpers;
 
 namespace Headline.Common.ViewModels
 {
@@ -18,8 +17,19 @@ namespace Headline.Common.ViewModels
         public HeadlineMaintenanceViewModel(IHeadlineData headlineData)
         {
             _headlineData = headlineData;
-            List<HeadlineModel> result = Run.Sync(() => _headlineData.GetDataAsync());
-            Headlines = result;
+        }
+        public async Task LoadDataAsync()
+        {
+            try
+            {
+                List<HeadlineModel> result = await _headlineData.GetDataAsync();
+                Headlines = result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
         }
 
         public async Task AddEmptyHeadline()
@@ -27,17 +37,17 @@ namespace Headline.Common.ViewModels
             Headlines.Add(new HeadlineModel() { Id = 0 });
         }
 
-        public void HandleEvent(HeadlineModel headline)
+        public async Task HandleEvent(HeadlineModel headline)
         {
             Console.WriteLine(headline);
             Debug.WriteLine(headline);
             if (headline.Id > 0)
             {
-                Run.Sync(() => _headlineData.PostDataAsync());
+                await _headlineData.PutDataAsync(headline);
             }
             else
             {
-                Run.Sync(() => _headlineData.PutDataAsync());
+                await _headlineData.PostDataAsync(headline);
             }
         }
 

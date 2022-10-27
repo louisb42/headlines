@@ -1,10 +1,10 @@
-﻿@page "/headlinemaintenance"
+@page "/headlinemaintenance"
 @using Headline.UI.Blazor.Web.Shared
 @using Headline.Common.ViewModels
 @using static MudBlazor.CategoryTypes
 @inject ISnackbar Snackbar
 @inject IJSRuntime JsRuntime
-@inject IHeadlineMaintenanceViewModel HeadlineMaintenanceViewModel;
+@inject IHeadlineMaintenanceViewModel headlineMaintenanceViewModel;
 
 <style>
     .colour-box {
@@ -23,20 +23,20 @@
 <MudText Typo="Typo.h3" GutterBottom="true">HEADLINES</MudText>
 <MudText Class="mb-8">Present and maintain headlines.</MudText>
 
-@if (HeadlineMaintenanceViewModel.Headlines == null)
+@if (headlineMaintenanceViewModel.Headlines == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {   
-    <MudTable Items="@HeadlineMaintenanceViewModel.Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
+    <MudTable Items="@headlineMaintenanceViewModel.Headlines" Dense="false" Hover="true" ReadOnly="false" CanCancelEdit="true"
           SortLabel="Sort By" CommitEditTooltip="Commit Edit"
-          OnCommitEditClick="@(() => Snackbar.Add("Headline saved"))" RowEditPreview="HeadlineMaintenanceViewModel.BackupItem" RowEditCancel="HeadlineMaintenanceViewModel.ResetItemToOriginalValues"
-          RowEditCommit="HeadlineMaintenanceViewModel.ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
+          OnCommitEditClick="@(() => Snackbar.Add("Headline saved"))" RowEditPreview="headlineMaintenanceViewModel.BackupItem" RowEditCancel="headlineMaintenanceViewModel.ResetItemToOriginalValues"
+          RowEditCommit="headlineMaintenanceViewModel.ItemHasBeenCommitted" IsEditRowSwitchingBlocked="true" ApplyButtonPosition="TableApplyButtonPosition.End">
         <ToolBarContent>
             <MudText Typo="Typo.h6">Headlines</MudText>
             <MudSpacer />
-            <MudButton OnClick=@HeadlineMaintenanceViewModel.AddEmptyHeadline>Add</MudButton>
+            <MudButton OnClick=@headlineMaintenanceViewModel.AddEmptyHeadline>Add</MudButton>
         </ToolBarContent>
         <ColGroup>
             <col style="width:50px;" />
@@ -89,4 +89,11 @@ else
             <MudTablePager />
         </PagerContent>
     </MudTable>
+}
+
+@functions {
+    protected override async Task OnInitializedAsync()
+    {
+        await headlineMaintenanceViewModel.LoadDataAsync();
+    }
 }

@@ -29,25 +29,24 @@ namespace Headline.API.Services
         }
 
         public List<HeadlineModel> GetAll()
-        {
-            return _context.Headlines.ToList();
-        }
+            => _context.Headlines.ToList();
 
         public HeadlineModel GetById(int id)
-        {
-            return GetHeadline(id);
-        }
+            => GetHeadline(id);
+
 
         public void Create(CreateHeadlineRequest model)
         {
-            var headline = _mapper.Map<HeadlineModel>(model);
+            HeadlineModel headline = _mapper.Map<HeadlineModel>(model);
+            var lastId = _context.Headlines.OrderBy(x => x.Id).Last().Id;
+            headline.Id = lastId + 1;
             _context.Headlines.Add(headline);
             _context.SaveChanges();
         }
 
         public void Update(int id, UpdateHeadlineRequest model)
         {
-            var headline = GetHeadline(id);
+            HeadlineModel headline = GetHeadline(id);
             _mapper.Map(model, headline);
             _context.Headlines.Update(headline);
             _context.SaveChanges();
@@ -55,7 +54,7 @@ namespace Headline.API.Services
 
         public void Delete(int id)
         {
-            var headline = GetHeadline(id);
+            HeadlineModel headline = GetHeadline(id);
             _context.Headlines.Remove(headline);
             _context.SaveChanges();
         }
@@ -63,7 +62,7 @@ namespace Headline.API.Services
         // helper methods
         private HeadlineModel GetHeadline(int id)
         {
-            var user = _context.Headlines.Find(id);
+            HeadlineModel? user = _context.Headlines.Find(id);
             if (user == null)
                 throw new KeyNotFoundException("Headline not found");
             return user;

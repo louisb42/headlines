@@ -2,7 +2,7 @@
 @page "/headlinepresentation"
 @using Headline.Common.ViewModels
 @using Headline.UI.Blazor.Web.Shared
-@inject IHeadlinePresentationViewModel HeadlinePresentationViewModel
+@inject IHeadlinePresentationViewModel headlinePresentationViewModel
 
 <style>
     .mCarousel {
@@ -39,14 +39,14 @@
     }
 </style>
 
-@if (HeadlinePresentationViewModel.Headlines == null)
+@if (headlinePresentationViewModel.Headlines == null)
 {
     <MudProgressCircular Color="Color.Default" Indeterminate="true" />
 }
 else
 {
 
-    <MudCarousel Class="mCarousel" ItemsSource="@HeadlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@HeadlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@HeadlineModel">
+    <MudCarousel Class="mCarousel" ItemsSource="@headlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@headlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@HeadlineModel">
         <ItemTemplate>
             <MudContainer Class="mContainer">
                 <MudCard Class="mCard" style="@context.BackgroundColour">
@@ -61,4 +61,11 @@ else
         </ItemTemplate>
     </MudCarousel>
 
+}
+
+@functions {
+    protected override async Task OnInitializedAsync()
+    {
+        await headlinePresentationViewModel.LoadDataAsync();
+    }
 }

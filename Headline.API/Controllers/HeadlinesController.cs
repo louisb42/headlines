@@ -35,14 +35,14 @@ namespace Headline.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(CreateHeadlineRequest model)
+        public IActionResult Create([FromBody] CreateHeadlineRequest model)
         {
             _headlineService.Create(model);
             return Ok(new { message = "Headline created" });
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(int id, UpdateHeadlineRequest model)
+        public IActionResult Update(int id, [FromBody] UpdateHeadlineRequest model)
         {
             _headlineService.Update(id, model);
             return Ok(new { message = "Headline updated" });

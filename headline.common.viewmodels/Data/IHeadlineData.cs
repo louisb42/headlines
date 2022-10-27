@@ -8,7 +8,7 @@ namespace Headline.Common.ViewModels.Data
     public interface IHeadlineData
     {
         Task<List<HeadlineModel>> GetDataAsync();
-        Task PostDataAsync();
-        Task PutDataAsync();
+        Task PostDataAsync(HeadlineModel headline);
+        Task PutDataAsync(HeadlineModel headline);
     }
 }

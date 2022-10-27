@@ -1,6 +1,7 @@
-﻿using Headline.Common.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+
+using Headline.Common.Models;
 
 namespace Headline.Common.ViewModels
 {
@@ -9,8 +10,9 @@ namespace Headline.Common.ViewModels
         HeadlineModel? HeadlineBeforeEdit { get; set; }
         List<HeadlineModel> Headlines { get; set; }
 
+        Task LoadDataAsync();
         Task AddEmptyHeadline();
-        void HandleEvent(HeadlineModel headline);
+        Task HandleEvent(HeadlineModel headline);
         void BackupItem(object headline);
         void ItemHasBeenCommitted(object headline);
         void ResetItemToOriginalValues(object headline);

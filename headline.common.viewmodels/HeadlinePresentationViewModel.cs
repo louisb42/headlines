@@ -1,12 +1,9 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Threading.Tasks;
 
 using Headline.Common.Models;
 using Headline.Common.ViewModels.Data;
-
-using Microsoft.VisualStudio.Threading;
 
 namespace Headline.Common.ViewModels
 {
@@ -17,23 +14,16 @@ namespace Headline.Common.ViewModels
 
         private readonly IHeadlineData _headlineData;
 
-        private AsyncEventHandler _asyncEventHandler;
         public HeadlinePresentationViewModel(IHeadlineData headlineData)
         {
             _headlineData = headlineData;
-
-            _asyncEventHandler += LoadDataAsync;
-
-            Debug.WriteLine("Async invoke incoming!");
-            _asyncEventHandler.InvokeAsync(this, EventArgs.Empty);
-            Debug.WriteLine("Done.");
         }
 
-        private async Task LoadDataAsync(object sender, EventArgs args)
+        public async Task LoadDataAsync()
         {
             try
             {
-                List<HeadlineModel> result = _headlineData.GetDataAsync().Result;
+                List<HeadlineModel> result = await _headlineData.GetDataAsync();
                 // #hack for now. Fix using an intermediate view-model
                 foreach (HeadlineModel headline in result)
                 {

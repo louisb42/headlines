@@ -2,17 +2,17 @@
 
 namespace Headline.API.RequestModels
 {
-    public class CreateHeadlineRequest
+    public class UpdateHeadlineRequest
     {
         [Required]
-        public string Banner { get; set; } = "";
+        public string Banner { get; set; }
 
-        public string BackgroundColour { get; set; } = "#000000";
+        public string BackgroundColour { get; set; }
 
-        public string ForegroundColour { get; set; } = "#ffffff";
+        public string ForegroundColour { get; set; }
 
-        public string ImageUrl { get; set; } = "";
+        public string ImageUrl { get; set; }
 
-        public bool Active { get; set; } = true;
+        public bool Active { get; set; }
     }
 }
