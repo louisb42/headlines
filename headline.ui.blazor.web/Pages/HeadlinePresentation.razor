@@ -48,7 +48,7 @@ else
 
     <MudCarousel Class="mCarousel" ItemsSource="@headlinePresentationViewModel.Headlines" ShowArrows="false" ShowBullets="false" EnableSwipeGesture="false" AutoCycleTime="@headlinePresentationViewModel.CycleTime" AutoCycle="true" TData="@HeadlineModel">
         <ItemTemplate>
-            <MudContainer Class="mContainer">
+            <MudContainer Class="mContainer" MaxWidth="MaxWidth.False">
                 <MudCard Class="mCard" style="@context.BackgroundColour">
                     <MudCardMedia Class="mCardMedia" Image="@context.ImageUrl" />
                     <MudCardContent Class="mCardContent">

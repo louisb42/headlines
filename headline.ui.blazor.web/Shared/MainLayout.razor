@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+@inherits LayoutComponentBase
+@inject NavigationManager _navManager
 
 <MudThemeProvider />
 <MudDialogProvider />
@@ -7,11 +8,17 @@
 <MudLayout>
     <MudAppBar Elevation="0" Color="@Color.Transparent" >
         <MudSpacer />
-        <MudIconButton Icon="@Icons.Material.Filled.EditNote" Color="Color.Inherit" Link="/headlinemaintenance" Edge="Edge.End" />
-        <MudIconButton Icon="@Icons.Material.Filled.Close" Color="Color.Inherit" Link="/headlinepresentation" Edge="Edge.End" />
+        @if (_navManager.Uri.Contains("headlinemaintenance"))
+        {
+            <MudIconButton Icon="@Icons.Material.Filled.Preview" Color="Color.Inherit" Link="/headlinepresentation" Edge="Edge.End" />
+        }
+        else
+        {
+            <MudIconButton Icon="@Icons.Material.Filled.Close" Color="Color.Inherit" Link="/headlinemaintenance" Edge="Edge.End" />
+        }
     </MudAppBar>
     <MudMainContent>
-        <MudContainer Style="height:90vh;">
+        <MudContainer Style="height:90vh;" MaxWidth="MaxWidth.False">
             @Body
         </MudContainer>
     </MudMainContent>
