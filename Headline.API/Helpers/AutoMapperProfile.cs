@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+
 using Headline.API.RequestModels;
 using Headline.Common.Models;
 
@@ -14,8 +15,10 @@ namespace Headline.API.Helpers
                     (src, dest, prop) =>
                     {
                         // ignore both null & empty string properties
-                        if (prop == null) return false;
-                        if (prop.GetType() == typeof(string) && string.IsNullOrEmpty((string)prop)) return false;
+                        if (prop == null)
+                            return false;
+                        if (prop.GetType() == typeof(string) && string.IsNullOrEmpty((string) prop))
+                            return false;
 
                         return true;
                     }

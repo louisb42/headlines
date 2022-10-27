@@ -29,16 +29,16 @@ namespace Headline.API.Helpers
                 {
                     case AppException e:
                         // custom application error
-                        response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        response.StatusCode = (int) HttpStatusCode.BadRequest;
                         break;
                     case KeyNotFoundException e:
                         // not found error
-                        response.StatusCode = (int)HttpStatusCode.NotFound;
+                        response.StatusCode = (int) HttpStatusCode.NotFound;
                         break;
                     default:
                         // unhandled error
                         _logger.LogError(error, error.Message);
-                        response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                        response.StatusCode = (int) HttpStatusCode.InternalServerError;
                         break;
                 }
 
