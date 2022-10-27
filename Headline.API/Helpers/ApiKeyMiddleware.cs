@@ -10,14 +10,14 @@
         }
         public async Task InvokeAsync(HttpContext context)
         {
-            if (!context.Request.Headers.TryGetValue(APIKEY, out var extractedApiKey))
+            if (!context.Request.Headers.TryGetValue(APIKEY, out Microsoft.Extensions.Primitives.StringValues extractedApiKey))
             {
                 context.Response.StatusCode = 401;
                 await context.Response.WriteAsync("Api Key was not provided ");
                 return;
             }
 
-            var appSettings = context.RequestServices.GetRequiredService<IConfiguration>();
+            IConfiguration appSettings = context.RequestServices.GetRequiredService<IConfiguration>();
 
             var apiKey = appSettings.GetValue<string>(APIKEY);
 

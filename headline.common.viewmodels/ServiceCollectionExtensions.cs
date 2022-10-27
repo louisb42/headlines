@@ -8,10 +8,10 @@ namespace Headline.Common.ViewModels
     {
         public static IServiceCollection AddViewModels(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IHeadlineViewModel, HeadlineViewModel>();
-            serviceCollection.AddScoped<IHeadlineMaintenanceViewModel, HeadlineMaintenanceViewModel>();
-            serviceCollection.AddScoped<IHeadlinePresentationViewModel, HeadlinePresentationViewModel>();
-            serviceCollection.AddScoped<IHeadlineData, HeadlineData>();
+            _ = serviceCollection.AddTransient<IHeadlineViewModel, HeadlineViewModel>();
+            _ = serviceCollection.AddScoped<IHeadlineMaintenanceViewModel, HeadlineMaintenanceViewModel>();
+            _ = serviceCollection.AddScoped<IHeadlinePresentationViewModel, HeadlinePresentationViewModel>();
+            _ = serviceCollection.AddScoped<IHeadlineData, HeadlineData>();
 
             return serviceCollection;
         }

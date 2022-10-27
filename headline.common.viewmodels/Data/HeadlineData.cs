@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 
 using Headline.Common.Models;
 
-using Microsoft.VisualStudio.Threading;
-
 namespace Headline.Common.ViewModels.Data
 {
     public class HeadlineData : IHeadlineData
@@ -26,17 +24,15 @@ namespace Headline.Common.ViewModels.Data
             var url = "/headlines/";
             try
             {
-                using (var client = new HttpClient())
-                {
-                    client.BaseAddress = new Uri(ApiBaseUrl);
-                    client.DefaultRequestHeaders.Add(ApiKeyName, ApiKeyValue);
+                using var client = new HttpClient();
+                client.BaseAddress = new Uri(ApiBaseUrl);
+                client.DefaultRequestHeaders.Add(ApiKeyName, ApiKeyValue);
 
-                    HttpResponseMessage response = await client.GetAsync(url);
-                    response.EnsureSuccessStatusCode();
-                    var result = await response.Content.ReadAsStringAsync();
-                    List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
-                    return headlineList;
-                }
+                HttpResponseMessage response = await client.GetAsync(url);
+                _ = response.EnsureSuccessStatusCode();
+                var result = await response.Content.ReadAsStringAsync();
+                List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
+                return headlineList;
             }
             catch (Exception ex)
             {
@@ -57,7 +53,7 @@ namespace Headline.Common.ViewModels.Data
                 HttpContent c = new StringContent(JsonSerializer.Serialize(headline), Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = await client.PostAsync(url, c);
-                response.EnsureSuccessStatusCode();
+                _ = response.EnsureSuccessStatusCode();
                 var result = await response.Content.ReadAsStringAsync();
                 List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
             }
@@ -79,7 +75,7 @@ namespace Headline.Common.ViewModels.Data
                 HttpContent c = new StringContent(JsonSerializer.Serialize(headline), Encoding.UTF8, "application/json");
 
                 HttpResponseMessage response = await client.PutAsync(url, c);
-                response.EnsureSuccessStatusCode();
+                _ = response.EnsureSuccessStatusCode();
                 var result = await response.Content.ReadAsStringAsync();
                 List<HeadlineModel>? headlineList = JsonSerializer.Deserialize<List<HeadlineModel>>(result);
             }

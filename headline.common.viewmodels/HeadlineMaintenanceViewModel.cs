@@ -32,9 +32,10 @@ namespace Headline.Common.ViewModels
 
         }
 
-        public async Task AddEmptyHeadline()
+        public Task AddEmptyHeadline()
         {
             Headlines.Add(new HeadlineModel() { Id = 0 });
+            return Task.CompletedTask;
         }
 
         public async Task HandleEvent(HeadlineModel headline)
@@ -51,23 +52,17 @@ namespace Headline.Common.ViewModels
             }
         }
 
-        public void BackupItem(object headline)
+        public void BackupItem(object headline) => HeadlineBeforeEdit = new HeadlineModel()
         {
-            HeadlineBeforeEdit = new HeadlineModel()
-            {
-                Id = ((HeadlineModel) headline).Id,
-                Banner = ((HeadlineModel) headline).Banner,
-                BackgroundColour = ((HeadlineModel) headline).BackgroundColour,
-                ForegroundColour = ((HeadlineModel) headline).ForegroundColour,
-                ImageUrl = ((HeadlineModel) headline).ImageUrl,
-                Active = ((HeadlineModel) headline).Active
-            };
-        }
+            Id = ((HeadlineModel) headline).Id,
+            Banner = ((HeadlineModel) headline).Banner,
+            BackgroundColour = ((HeadlineModel) headline).BackgroundColour,
+            ForegroundColour = ((HeadlineModel) headline).ForegroundColour,
+            ImageUrl = ((HeadlineModel) headline).ImageUrl,
+            Active = ((HeadlineModel) headline).Active
+        };
 
-        public void ItemHasBeenCommitted(object headline)
-        {
-            HandleEvent((HeadlineModel) headline);
-        }
+        public void ItemHasBeenCommitted(object headline) => HandleEvent((HeadlineModel) headline);
 
         public void ResetItemToOriginalValues(object headline)
         {

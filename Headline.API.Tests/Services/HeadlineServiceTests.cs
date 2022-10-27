@@ -2,19 +2,20 @@ using AutoMapper;
 
 using Headline.API.Helpers;
 using Headline.API.RequestModels;
+using Headline.API.Services;
 using Headline.Common.Models;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Headline.API.Services.Tests
+namespace Headline.API.Tests.Services
 {
     [TestClass()]
     public class HeadlineServiceTests
     {
         protected readonly IConfiguration configuration;
-        private DataContext _context;
+        private readonly DataContext _context;
         private readonly IMapper _mapper;
         private readonly IHeadlineService _headlineService;
 
@@ -22,15 +23,15 @@ namespace Headline.API.Services.Tests
         {
             IConfigurationRoot configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
             var services = new ServiceCollection();
-            services.AddSingleton<IConfiguration>(configuration);
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddDbContext<DataContext>();
-            services.AddScoped<IHeadlineService, HeadlineService>();
+            _ = services.AddSingleton<IConfiguration>(configuration);
+            _ = services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            _ = services.AddDbContext<DataContext>();
+            _ = services.AddScoped<IHeadlineService, HeadlineService>();
 
             ServiceProvider serviceProvider = services.BuildServiceProvider();
 
             _context = serviceProvider.GetService<DataContext>();
-            _context.Database.EnsureCreated();
+            _ = _context.Database.EnsureCreated();
 
             _headlineService = serviceProvider.GetService<IHeadlineService>();
         }
@@ -84,7 +85,8 @@ namespace Headline.API.Services.Tests
         public async Task DeleteAsync_Test()
         {
             await _headlineService.DeleteAsync(2);
-            HeadlineModel result = await _headlineService.GetByIdAsync(2);
+
+            _ = await _headlineService.GetByIdAsync(2);
         }
     }
 }

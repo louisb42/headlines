@@ -14,17 +14,12 @@ namespace Headline.API.Helpers
             Configuration = configuration;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
+        protected override void OnConfiguring(DbContextOptionsBuilder options) =>
             // in memory database used for simplicity, change to a real db for production applications
             options.UseInMemoryDatabase("HeadlineDb");
-        }
 
         public DbSet<HeadlineModel> Headlines { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Seed();
-        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder) => modelBuilder.Seed();
     }
 }

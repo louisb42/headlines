@@ -8,7 +8,7 @@ namespace Headline.API.Helpers
     {
         public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 1,
@@ -18,7 +18,7 @@ namespace Headline.API.Helpers
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Will_Ferrell_2012.jpg/330px-Will_Ferrell_2012.jpg",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 2,
@@ -28,7 +28,7 @@ namespace Headline.API.Helpers
                     ImageUrl = "https://www.magicalquote.com/wp-content/uploads/2015/03/Sheldon-Cooper.jpg",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 3,
@@ -38,7 +38,7 @@ namespace Headline.API.Helpers
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg/330px-Abraham_Lincoln_O-77_matte_collodion_print.jpg",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 4,
@@ -47,7 +47,7 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#000000",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 5,
@@ -57,7 +57,7 @@ namespace Headline.API.Helpers
                     ImageUrl = "https://idsb.tmgrup.com.tr/ly/uploads/images/2020/07/06/thumbs/800x531/44741.jpg?v=1594038512",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 6,
@@ -66,7 +66,7 @@ namespace Headline.API.Helpers
                     ForegroundColour = "#000000",
                     Active = true
                 });
-            modelBuilder.Entity<HeadlineModel>().HasData(
+            _ = modelBuilder.Entity<HeadlineModel>().HasData(
                 new HeadlineModel
                 {
                     Id = 7,

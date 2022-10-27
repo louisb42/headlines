@@ -37,7 +37,7 @@ namespace Headline.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] CreateHeadlineRequest model)
         {
-            await _headlineService.CreateAsync(model);
+            _ = await _headlineService.CreateAsync(model);
             return Ok(new { message = "Headline created" });
         }
 

@@ -22,16 +22,16 @@ namespace Headline.API.Helpers
             }
             catch (Exception error)
             {
-                var response = context.Response;
+                HttpResponse response = context.Response;
                 response.ContentType = "application/json";
 
                 switch (error)
                 {
-                    case AppException e:
+                    case AppException:
                         // custom application error
                         response.StatusCode = (int) HttpStatusCode.BadRequest;
                         break;
-                    case KeyNotFoundException e:
+                    case KeyNotFoundException:
                         // not found error
                         response.StatusCode = (int) HttpStatusCode.NotFound;
                         break;
