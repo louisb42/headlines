@@ -2,7 +2,7 @@
 
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Headline.Common.ViewModels
+namespace Headline.Common.ViewModels.Helpers
 {
     public static class ServiceCollectionExtensions
     {

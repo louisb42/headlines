@@ -1,4 +1,4 @@
-using Headline.Common.ViewModels;
+using Headline.Common.ViewModels.Helpers;
 using Headline.UI.Blazor.Web;
 
 using Microsoft.AspNetCore.Components.Web;

@@ -8,7 +8,7 @@ using Headline.Common.ViewModels.Data;
 
 namespace Headline.Common.ViewModels
 {
-    public class HeadlineMaintenanceViewModel : IHeadlineMaintenanceViewModel
+    public class HeadlineMaintenanceViewModel : BaseViewModel, IHeadlineMaintenanceViewModel
     {
         public HeadlineModel? HeadlineBeforeEdit { get; set; }
         public List<HeadlineModel> Headlines { get; set; } = new List<HeadlineModel>();

@@ -1,8 +1,8 @@
-﻿using Headline.Common.Models;
+using Headline.Common.Models;
 
 namespace Headline.Common.ViewModels
 {
-    public class HeadlineViewModel : IHeadlineViewModel
+    public class HeadlineViewModel : BaseViewModel, IHeadlineViewModel
     {
         private readonly HeadlineModel _headline;
 

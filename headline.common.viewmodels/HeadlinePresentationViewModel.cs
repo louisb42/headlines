@@ -7,7 +7,7 @@ using Headline.Common.ViewModels.Data;
 
 namespace Headline.Common.ViewModels
 {
-    public class HeadlinePresentationViewModel : IHeadlinePresentationViewModel
+    public class HeadlinePresentationViewModel : BaseViewModel, IHeadlinePresentationViewModel
     {
         public List<HeadlineModel> Headlines { get; set; } = new List<HeadlineModel>();
         public TimeSpan CycleTime { get; set; } = TimeSpan.FromSeconds(7);
