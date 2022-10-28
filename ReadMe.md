@@ -1,4 +1,4 @@
-# Headline system Planning
+# Headline system
 
 ## Requirements
 
@@ -32,7 +32,8 @@
       access
     - Authentication should be implemented in the best way you see fit
     - You can assume that the project will be run on an SSL enabled application server
-    - Store the data in an SQLite db \* All parts of the stack should share as much code as possible.
+    - Store the data in an SQLite db
+    - All parts of the stack should share as much code as possible.
 - Challenge C Functionality should be as follows:
   - Your application “Headline” should allow the user to add headlines i.e. company wide messages that the
     company wants to be displayed everywhere they have LCD screens.
@@ -214,6 +215,8 @@ Rel(auth, api, "https", $tags="authRel")
 
 ## API Authorization
 
+- Mock only
+
 ## Nice to have but out of scope
 
 - Paging of headlines when listed for maintenance
@@ -226,9 +229,10 @@ Rel(auth, api, "https", $tags="authRel")
 
 ## Decision Log
 
-- Not using `MVVMLight` as it's been [deprecated](https://www.nuget.org/packages/MvvmLight/5.4.1.1?_src=template). Using the recommended CommunityToolkit.Mvvm.
+- Not using `MVVMLight` as it's been [deprecated](https://www.nuget.org/packages/MvvmLight/5.4.1.1?_src=template). Even the website does not work any more. Related VS Toolkit no longer compatible with latest Visual Studio. Using the recommended CommunityToolkit.Mvvm.
 
 ## Dev Notes / Questions
 
 - MVVM architecture is overkill for solution?
 - Same solution using .NET MAUI should be quicker and simpler?
+- Compatibility causing lots of headaches (`..\Headline.UI.Xam\Headline.UI.Xam.csproj' targets 'netstandard2.1'. It cannot be referenced by a project that targets 'UAP,Version=v10.0.16299'. Headline.UI.Xam.UWP`). See [Using .NET Standard 2.1 with UWP](https://stackoverflow.com/questions/58070082/using-net-standard-2-1-with-uwp).
